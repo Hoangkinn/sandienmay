@@ -1,0 +1,8 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/prod-htaccess-now"
+cd "/public_html"
+get ".htaccess" "public_html-root-.htaccess"
+exit

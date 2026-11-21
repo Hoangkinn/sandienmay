@@ -1,0 +1,18 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+cd "/public_html/demo.sandienmay.com/bootstrap/cache"
+ls
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/image-batch"
+cd "/public_html/demo.sandienmay.com/public"
+get ".htaccess" "host-public-.htaccess"
+cd "/public_html/demo.sandienmay.com"
+get ".htaccess" "host-root-.htaccess"
+
+cd "/public_html/demo.sandienmay.com/public"
+ls "zz-*.php"
+
+exit

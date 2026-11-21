@@ -1,0 +1,9 @@
+option batch abort
+option confirm off
+open ynlbdgfvhosting@103.75.185.69
+ls /public_html/demo.sandienmay.com/app/Helpers
+ls /public_html/demo.sandienmay.com/app/Models
+ls /public_html/demo.sandienmay.com/app/View/Components/Fe
+ls /public_html/demo.sandienmay.com/resources/views/components/fe
+ls /public_html/demo.sandienmay.com/database/migrations
+exit

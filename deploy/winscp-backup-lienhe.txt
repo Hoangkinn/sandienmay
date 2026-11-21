@@ -1,0 +1,22 @@
+# Vong lien he noi (03/11) — backup 5 file tren demo ve local TRUOC khi de
+# Blade + CSS src/dist + JS main. KHONG SQL, KHONG dong .env, KHONG artisan.
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-03/lien-he/web"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+get "layout.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-03/lien-he/css-src"
+cd "/public_html/demo.sandienmay.com/public/css-new/src"
+get "layout.css"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-03/lien-he/css-dist"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+get "layout.min.css"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-03/lien-he/js"
+cd "/public_html/demo.sandienmay.com/public/js-new/fe"
+get "main.js"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-03/lien-he/js"
+cd "/public_html/demo.sandienmay.com/public/js-new/fe"
+get "main.min.js"
+exit

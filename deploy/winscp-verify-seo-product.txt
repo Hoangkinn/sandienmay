@@ -1,0 +1,9 @@
+# Vong 15 (03/11) — lay nguoc file vua upload de so md5 (chung minh noi dung tren host = local).
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/verify-seo-product/controllers"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Frontend"
+get "New_ProductController.php"
+exit

@@ -1,0 +1,12 @@
+# Vong 11 (02/11) — sitemap.xml, 2 file. Chay SAU winscp-backup-sitemap.txt.
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/app/Http/Controllers/Frontend"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Frontend"
+put "SitemapController.php"
+lcd "D:/laragon/www/sandienmay/resources/views"
+cd "/public_html/demo.sandienmay.com/resources/views"
+put "sitemap.blade.php"
+exit

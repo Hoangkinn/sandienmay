@@ -1,0 +1,31 @@
+# Don file rac do vo tinh dua ca repo len site chinh (05/11)
+# Moi thu duoi day deu CON NGUYEN ban tai D:/laragon/www/sandienmay -> xoa tren host khong mat gi.
+option batch continue
+option confirm off
+open ynlbdgfvhosting@103.75.185.69
+
+rmdir "/public_html/sandienmay.com/.git"
+rmdir "/public_html/sandienmay.com/node_modules"
+rmdir "/public_html/sandienmay.com/deploy"
+rmdir "/public_html/sandienmay.com/scripts"
+rmdir "/public_html/sandienmay.com/tests"
+rmdir "/public_html/sandienmay.com/.continue"
+
+rm "/public_html/sandienmay.com/phpunit.xml"
+rm "/public_html/sandienmay.com/.styleci.yml"
+rm "/public_html/sandienmay.com/package.json"
+rm "/public_html/sandienmay.com/package-lock.json"
+rm "/public_html/sandienmay.com/.env.example"
+rm "/public_html/sandienmay.com/.editorconfig"
+rm "/public_html/sandienmay.com/.gitattributes"
+rm "/public_html/sandienmay.com/.gitignore"
+rm "/public_html/sandienmay.com/README.md"
+rm "/public_html/sandienmay.com/public/zz-diag.php"
+
+echo "===== CON LAI o goc site ====="
+cd "/public_html/sandienmay.com"
+ls
+echo "===== CON LAI trong public ====="
+cd "/public_html/sandienmay.com/public"
+ls
+exit

@@ -1,0 +1,11 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/deploy/prod-sql"
+cd   "/public_html/sandienmay.com/public"
+put  "zz-local-data.sql"
+
+echo "===== uploaded ====="
+exit

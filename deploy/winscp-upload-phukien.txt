@@ -1,0 +1,40 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/app/Helpers"
+cd   "/public_html/demo.sandienmay.com/app/Helpers"
+put  "AccessoryHelper.php"
+
+lcd "D:/laragon/www/sandienmay/app/Http/Controllers/Backend"
+cd   "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+put  "ProductController.php"
+
+lcd "D:/laragon/www/sandienmay/app/DTOs/Product"
+cd   "/public_html/demo.sandienmay.com/app/DTOs/Product"
+put  "ProductDetailDto.php"
+
+lcd "D:/laragon/www/sandienmay/routes"
+cd   "/public_html/demo.sandienmay.com/routes"
+put  "backend.php"
+
+lcd "D:/laragon/www/sandienmay/resources/views/backend/product"
+cd   "/public_html/demo.sandienmay.com/resources/views/backend/product"
+put  "create.blade.php"
+put  "edit.blade.php"
+
+lcd "D:/laragon/www/sandienmay/resources/views/web/product"
+cd   "/public_html/demo.sandienmay.com/resources/views/web/product"
+put  "_first-screen.blade.php"
+
+lcd "D:/laragon/www/sandienmay/public/css-new/dist"
+cd   "/public_html/demo.sandienmay.com/public/css-new/dist"
+put  "product.min.css"
+
+lcd "D:/laragon/www/sandienmay/public/js-new/fe"
+cd   "/public_html/demo.sandienmay.com/public/js-new/fe"
+put  "main.min.js"
+
+echo "===== upload xong ====="
+exit

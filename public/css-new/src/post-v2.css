@@ -1,0 +1,857 @@
+/* Trang tin tức bản design TTMS: danh mục cha (/tin-tuc-may), danh mục con
+   (/{slug-danh-muc}) và chi tiết bài viết. Body class: post-v2.
+   Nạp cùng base.css + layout.css (tokens --navy/--ink/--line định nghĩa ở layout.css). */
+
+.post-v2 {
+    --page-bg: #FFFFFF;
+    --muted: #7F7F7F;
+    --red: #D80000;
+    --flame: #ED1B24;
+    --chip-bd: #E3E3E8;
+    --navy-hi: #364AC5;
+    --ease: cubic-bezier(.4, 0, .2, 1);
+    --t: .18s var(--ease);
+    --lift: 0 6px 16px rgba(38, 52, 139, .18);
+    background: var(--page-bg);
+}
+
+.post-v2 .main {
+    padding-top: 0;
+    padding-bottom: 30px;
+    background: #F7F7F8;
+    margin-top: 124px;
+}
+/* Dưới 993px header trở về position:relative (layout.css) nên không được chừa margin. */
+@media (max-width: 992px) {
+    .post-v2 .main {
+        margin-top: 0;
+    }
+}
+
+.pdv2-main,
+.pdv2-side {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.pdv2-side {
+    position: sticky;
+    top: 0;
+}
+
+.post-v2 .responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- Breadcrumb ---------- */
+.post-v2 .breadcrumb-bar {
+    padding: 16px 0 12px;
+}
+.post-v2 .breadcrumb-bar ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+}
+.post-v2 .breadcrumb-bar li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+}
+.post-v2 .breadcrumb-bar li + li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-right: 1.5px solid #B4B4B4;
+    border-bottom: 1.5px solid #B4B4B4;
+    transform: rotate(-45deg);
+}
+.post-v2 .breadcrumb-bar a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color var(--t);
+}
+.post-v2 .breadcrumb-bar a:hover {
+    color: var(--navy);
+}
+.post-v2 .breadcrumb-bar [aria-current] {
+    color: var(--ink);
+    font-weight: 500;
+}
+
+/* ---------- Chips danh mục tin ---------- */
+.news-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 4px 0 24px;
+}
+.news-chip {
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 16px;
+    border: 1px solid var(--chip-bd);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--ink);
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: color var(--t), background-color var(--t), border-color var(--t);
+}
+.news-chip:hover {
+    border-color: var(--navy);
+    color: var(--navy);
+}
+.news-chip.is-active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+}
+
+/* ---------- Khối bài viết ---------- */
+.news-block+.news-block {
+    margin-top: 32px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.news-block-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+.news-block-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: var(--red);
+}
+.news-block-title svg {
+    flex: none;
+    color: var(--flame);
+}
+.news-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    white-space: nowrap;
+    text-decoration: none;
+    transition: color var(--t);
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 100px;
+}
+.news-more svg {
+    transition: transform var(--t);
+}
+.news-more:hover {
+    color: var(--navy-hi);
+}
+.news-more:hover svg {
+    transform: translateX(3px);
+}
+
+/* ---------- Lưới + card bài viết ---------- */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 16px;
+}
+.post-card {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
+}
+.post-card-thumb {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #F2F3F7;
+}
+.post-card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top right;
+    transition: transform .35s var(--ease);
+}
+.post-card:hover .post-card-thumb img {
+    transform: scale(1.05);
+}
+.post-card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.9em;
+    margin: 10px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.45;
+    color: var(--ink);
+    transition: color var(--t);
+}
+.post-card:hover .post-card-title {
+    color: var(--navy);
+}
+.post-card-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--muted);
+}
+.post-card-date svg {
+    flex: none;
+}
+.news-empty {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 24px 0;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--muted);
+}
+
+/* ---------- Xem thêm bài viết ---------- */
+.news-loadmore-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 28px 0 8px;
+}
+.news-loadmore {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 44px;
+    padding: 0 28px;
+    border: 1.5px solid var(--navy);
+    border-radius: 10px;
+    background: transparent;
+    color: var(--navy);
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color var(--t), background-color var(--t), box-shadow var(--t);
+}
+.news-loadmore:disabled {
+    opacity: .6;
+    cursor: progress;
+}
+.news-loadmore svg {
+    transition: transform var(--t);
+}
+.news-loadmore:hover {
+    background: var(--navy);
+    color: #fff;
+    box-shadow: var(--lift);
+}
+.news-loadmore:hover svg {
+    transform: translateY(3px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1200px) {
+    .news-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 991.98px) {
+    .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .news-block-title {
+        font-size: 16px;
+    }
+}
+@media (max-width: 767.98px) {
+    .post-v2 .news-chips {
+        gap: 8px;
+    }
+    .post-v2 .news-chip {
+        height: 32px;
+        padding: 0 12px;
+        font-size: 13px;
+    }
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 12px;
+    }
+    .post-card-title {
+        font-size: 13.5px;
+    }
+}
+
+/* ============================================================
+   TRANG CHI TIẾT BÀI VIẾT
+   ============================================================ */
+.pdv2 {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 20px;
+    align-items: start;
+    margin: 6px 0 34px;
+}
+
+.pdv2-title {
+    margin: 4px 0 10px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.32;
+    color: var(--ink);
+}
+
+.pdv2-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin-bottom: 18px;
+    font-size: 13px;
+    color: var(--muted);
+}
+.pdv2-meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.pdv2-meta-item svg {
+    flex: none;
+    color: #A9A9A9;
+}
+.pdv2-meta-item b {
+    font-weight: 600;
+    color: var(--ink);
+}
+
+/* ---------- Nội dung bài viết ---------- */
+.post-v2 .pdv2-content {
+    border: 0;
+    box-shadow: none;
+    background: none;
+    padding: 0;
+    font-size: 15.5px;
+    line-height: 1.75;
+    color: #333;
+}
+.pdv2-content p {
+    margin: 0 0 16px;
+}
+.pdv2-content h2 {
+    margin: 26px 0 12px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--navy);
+}
+.pdv2-content h3 {
+    margin: 20px 0 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ink);
+}
+.pdv2-content ul,
+.pdv2-content ol {
+    margin: 0 0 16px;
+    padding-left: 22px;
+}
+.pdv2-content li {
+    margin-bottom: 6px;
+}
+.pdv2-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.pdv2-content figure {
+    /* base.css đặt figure { max-width: max-content } -> ảnh to hơn cột trên mobile */
+    max-width: 100%;
+    margin: 0 0 18px;
+}
+.pdv2-content figcaption {
+    margin-top: 8px;
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+    color: var(--muted);
+}
+.pdv2-content blockquote {
+    margin: 20px 0;
+    padding: 14px 18px;
+    border-left: 4px solid var(--navy);
+    border-radius: 0 8px 8px 0;
+    background: #F4F6FB;
+    font-style: italic;
+    color: #4B4B57;
+}
+.pdv2-content a {
+    color: #007FC0;
+    text-decoration: underline;
+}
+
+/* Mục lục (x-fe.toc) */
+.post-v2 .toc {
+    width: auto;
+    margin: 0 0 20px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #26348b;
+    color: #fff;
+    overflow: hidden;
+}
+.post-v2 .toc summary {
+    height: 48px;
+    background: transparent;
+    list-style: none;
+}
+.post-v2 .toc summary::-webkit-details-marker {
+    display: none;
+}
+.post-v2 .toc summary .fs-17 {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.post-v2 .toc summary .fs-17::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M9 6h12M9 12h12M9 18h12'/%3E%3Cpath d='M4.5 6h.01M4.5 12h.01M4.5 18h.01' stroke-width='3.5'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+.post-v2 .toc #toc {
+    padding: 12px 14px 12px !important;
+    font-size: 14px;
+    color: #007FC0;
+}
+.post-v2 .toc #toc li {
+    margin-bottom: 6px;
+}
+/* base.css đang đảo chiều chevron của x-fe.toc (đóng -> mũi tên lên) */
+.post-v2 .toc details:not([open]) .btn-hide,
+.post-v2 .toc details[open] .btn-show {
+    display: inline-block;
+}
+.post-v2 .toc details:not([open]) .btn-show,
+.post-v2 .toc details[open] .btn-hide {
+    display: none;
+}
+
+/* ---------- Thẻ tác giả ---------- */
+.pdv2-author {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: 26px;
+    padding: 16px;
+    border-radius: 12px;
+    background: #F4F6FB;
+}
+.pdv2-author-avatar {
+    flex: 0 0 64px;
+}
+.pdv2-author-avatar span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.pdv2-author-role {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--red);
+}
+.pdv2-author-name {
+    display: block;
+    margin: 2px 0 6px;
+    font-size: 16px;
+    color: var(--ink);
+}
+.pdv2-author-info p {
+    margin: 0 0 10px;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #4B4B57;
+}
+.pdv2-social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.pdv2-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    transition: background-color var(--t), transform var(--t);
+}
+.pdv2-social a svg {
+    width: 15px;
+    height: 15px;
+}
+.pdv2-social a span {
+    font-size: 11px;
+    font-weight: 700;
+}
+.pdv2-social a:hover {
+    background: var(--navy-hi);
+    transform: translateY(-2px);
+}
+
+/* ---------- Hỏi và đáp ---------- */
+.pdv2-qa {
+    margin-top: 26px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #F4F4F6;
+}
+.qa-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.qa-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+}
+.qa-actions button {
+    background: var(--navy);
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--t);
+}
+.qa-actions button:hover {
+    background: var(--navy-hi);
+}
+.qa-note {
+    padding: 12px 16px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1.55;
+    color: #4B4B57;
+}
+.qa-form {
+    display: none;
+    margin: 14px 0;
+    padding-top: 0;
+    border-top: 0;
+}
+.qa-form.is-open {
+    display: block;
+}
+.qa-badge {
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #FFEFD6;
+    color: #B25E00;
+    font-size: 11.5px;
+    font-weight: 600;
+}
+
+.pdv2-qa .pd-form {
+    font-weight: 600;
+    color: #333;
+}
+.pd-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+.pdv2-qa .pd-form label {
+    display: block;
+    font-size: 15px;
+}
+.pdv2-qa .pd-form label>span {
+    display: block;
+    margin-bottom: 6px;
+}
+.pdv2-qa .pd-form input,
+.pdv2-qa .pd-form textarea {
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    outline: none;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+.pdv2-qa .pd-form input:focus,
+.pdv2-qa .pd-form textarea:focus {
+    border-color: var(--navy);
+    box-shadow: 0 0 0 3px rgba(38, 52, 139, .12);
+}
+.pdv2-qa .pd-form ::placeholder {
+    color: #A9A9A9;
+}
+.pdv2-qa .pd-form-comment {
+    display: block;
+    margin-top: 14px;
+}
+.pdv2-qa .pd-form-comment textarea {
+    resize: vertical;
+}
+.pdv2-qa .pd-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+.pdv2-qa .pd-form-actions button {
+    background: var(--navy);
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: 11px 26px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .25s ease, box-shadow .25s ease;
+}
+.pdv2-qa .pd-form-actions button:hover {
+    background: var(--navy-hi);
+    box-shadow: 0 6px 16px rgba(38, 52, 139, .25);
+}
+
+.pdv2-qa .pd-qa-list {
+    margin-top: 16px;
+    border-top: 1px solid #E1E1E6;
+    padding-top: 14px;
+}
+.pdv2-qa .pd-qa-item {
+    padding-bottom: 18px;
+}
+.pdv2-qa .pd-qa-item.is-hidden {
+    display: none;
+}
+.pdv2-qa .pd-qa-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pdv2-qa .pd-qa-head strong {
+    font-size: 16px;
+    color: var(--ink);
+}
+.pdv2-qa .pd-qa-text {
+    margin: 8px 0 6px;
+    font-size: 15px;
+    line-height: 1.55;
+    color: #333;
+}
+.pdv2-qa .pd-qa-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pdv2-qa .pd-avatar {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #EDEDF0;
+    color: #A9A9A9;
+}
+.pdv2-qa .pd-avatar-letter {
+    border-radius: 8px;
+    background: #E4E6EF;
+    color: var(--ink);
+    font-size: 15px;
+    font-weight: 700;
+}
+.pdv2-qa .pd-avatar-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    border: 1px solid var(--line);
+}
+.pdv2-qa .pd-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--muted);
+}
+.pdv2-qa .pd-qa-reply {
+    margin: 12px 0 0 20px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    background: #E4E4E8;
+}
+.pdv2-qa .pd-qa-more {
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+}
+.pdv2-qa .cta-xemthem-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 28px;
+    border: 1px solid var(--navy);
+    border-radius: 8px;
+    background: #fff;
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .25s ease, color .25s ease;
+}
+.pdv2-qa .cta-xemthem-more:hover {
+    background: var(--navy);
+    color: #fff;
+}
+
+/* ---------- Cột bài viết liên quan ---------- */
+.pdv2-side .news-block-title {
+    font-size: 17px;
+    margin-bottom: 14px;
+}
+.rel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.rel-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+}
+.rel-thumb {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #F2F3F7;
+}
+.rel-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top right;
+    transition: transform .35s var(--ease);
+}
+.rel-item:hover .rel-thumb img {
+    transform: scale(1.05);
+}
+.rel-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.45;
+    color: var(--ink);
+    transition: color var(--t);
+}
+.rel-item:hover .rel-title {
+    color: var(--navy);
+}
+.rel-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1200px) {
+    .pdv2 {
+        grid-template-columns: minmax(0, 1fr) 280px;
+    }
+}
+@media (max-width: 991.98px) {
+    .pdv2 {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .pdv2-title {
+        font-size: 23px;
+    }
+    .pdv2-side {
+        margin-top: 4px;
+    }
+    .pd-form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .post-card-thumb img,
+    .rel-thumb img,
+    .news-more svg,
+    .news-loadmore svg,
+    .pdv2-social a {
+        transition: none;
+    }
+
+    .post-card:hover .post-card-thumb img,
+    .rel-item:hover .rel-thumb img,
+    .pdv2-social a:hover {
+        transform: none;
+    }
+}

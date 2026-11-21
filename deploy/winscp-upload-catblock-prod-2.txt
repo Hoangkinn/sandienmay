@@ -1,0 +1,21 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/public/css-new/src"
+cd   "/public_html/sandienmay.com/public/css-new/src"
+put  "home-v2.css"
+
+lcd "D:/laragon/www/sandienmay/public/css-new/dist"
+cd   "/public_html/sandienmay.com/public/css-new/dist"
+put  "home-v2.min.css"
+
+echo "===== verify: lay file ve de so md5 ====="
+lcd "D:/laragon/www/sandienmay/deploy/verify-host-2026-11-06-catblock-prod"
+cd   "/public_html/sandienmay.com/public/css-new/src"
+get  "home-v2.css"
+cd   "/public_html/sandienmay.com/public/css-new/dist"
+get  "home-v2.min.css"
+
+exit

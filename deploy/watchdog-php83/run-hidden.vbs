@@ -1,0 +1,2 @@
+' 0 = hidden window, False = don't wait. Keeps the watchdog running with no CMD flash.
+CreateObject("WScript.Shell").Run "cmd /c ""D:\laragon\www\sandienmay\deploy\watchdog-php83\watchdog.bat""", 0, False

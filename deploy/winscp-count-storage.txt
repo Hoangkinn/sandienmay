@@ -1,0 +1,13 @@
+# Dem file trong cac kho anh: prod public/storage, prod storage/app/public, demo storage/app/public
+option batch abort
+option confirm off
+open ynlbdgfvhosting@103.75.185.69
+echo "@@@PROD-PUBLIC-STORAGE"
+ls "/public_html/sandienmay.com/public/storage"
+echo "@@@PROD-STORAGE-APP-PUBLIC"
+ls "/public_html/sandienmay.com/storage/app/public"
+echo "@@@PROD-STORAGE-APP"
+ls "/public_html/sandienmay.com/storage/app"
+echo "@@@DEMO-STORAGE-APP-PUBLIC"
+ls "/public_html/demo.sandienmay.com/storage/app/public"
+exit

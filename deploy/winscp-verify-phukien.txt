@@ -1,0 +1,38 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/phu-kien-verify/app-Helpers"
+cd   "/public_html/demo.sandienmay.com/app/Helpers"
+get  "AccessoryHelper.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/phu-kien-verify/app-Backend"
+cd   "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+get  "ProductController.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/phu-kien-verify/app-DTOs"
+cd   "/public_html/demo.sandienmay.com/app/DTOs/Product"
+get  "ProductDetailDto.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/phu-kien-verify/routes"
+cd   "/public_html/demo.sandienmay.com/routes"
+get  "backend.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/phu-kien-verify/views-backend-product"
+cd   "/public_html/demo.sandienmay.com/resources/views/backend/product"
+get  "create.blade.php"
+get  "edit.blade.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/phu-kien-verify/views-web-product"
+cd   "/public_html/demo.sandienmay.com/resources/views/web/product"
+get  "_first-screen.blade.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/phu-kien-verify/pub-css"
+cd   "/public_html/demo.sandienmay.com/public/css-new/dist"
+get  "product.min.css"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/phu-kien-verify/pub-js"
+cd   "/public_html/demo.sandienmay.com/public/js-new/fe"
+get  "main.min.js"
+exit

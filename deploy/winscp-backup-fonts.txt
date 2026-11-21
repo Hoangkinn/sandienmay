@@ -1,0 +1,18 @@
+# Vong 9 (31/10) — backup 4 file ghi de cua self-host Inter (3 woff2 la file moi, khong can backup)
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-31/css-dist"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+get "base.min.css"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-31/css-src"
+cd "/public_html/demo.sandienmay.com/public/css-new/src"
+get "base.css"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-31/views-web"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+get "layout.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-31/views-errors"
+cd "/public_html/demo.sandienmay.com/resources/views/errors"
+get "404.blade.php"
+exit

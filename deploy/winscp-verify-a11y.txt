@@ -1,0 +1,16 @@
+# Dao nguoc file vua upload de doi md5
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/verify-a11y/views-product"
+cd "/public_html/demo.sandienmay.com/resources/views/web/product"
+get "category.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/verify-a11y/views-web"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+get "header.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/verify-a11y/css"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+get "category-v2.min.css"
+get "layout.min.css"
+exit

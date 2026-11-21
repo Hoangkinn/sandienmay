@@ -1,0 +1,19 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/post-search/app-Backend"
+cd   "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+get  "PostController.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/post-search/views-post"
+cd   "/public_html/demo.sandienmay.com/resources/views/backend/post"
+get  "index.blade.php"
+
+echo "===== kiem tra file da ve ====="
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/post-search/app-Backend"
+ls "*.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/post-search/views-post"
+ls "*.blade.php"
+exit

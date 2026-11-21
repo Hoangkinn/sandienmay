@@ -1,0 +1,12 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/similar-products-2026-11-12/backup"
+cd "/public_html/demo.sandienmay.com/resources/views/web/product"
+get "detail.blade.php"
+cd "/public_html/demo.sandienmay.com/public/css-new/src"
+get "product.css"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+get "product.min.css"
+exit

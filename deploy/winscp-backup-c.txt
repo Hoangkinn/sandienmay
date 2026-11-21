@@ -1,0 +1,39 @@
+# Backup vien cho vung PageSpeed 6 (30/10) - chay TRUOC winscp-upload-c.txt
+# Chay: MSYS2_ARG_CONV_EXCL='*' "/c/Program Files (x86)/WinSCP/WinSCP.com" "/script=D:/laragon/www/sandienmay/deploy/winscp-backup-c.txt"
+# Lay ban hien tai tren host ve de con duong rollback (khong co shell/artisan).
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-30/public-js-new-fe"
+cd "/public_html/demo.sandienmay.com/public/js-new/fe"
+get "main.min.js"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-30/views-web"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+get "layout.blade.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-30/views-web-home"
+cd "/public_html/demo.sandienmay.com/resources/views/web/home"
+get "index.blade.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-30/views-web-product"
+cd "/public_html/demo.sandienmay.com/resources/views/web/product"
+get "detail.blade.php"
+get "index.blade.php"
+get "_first-screen.blade.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-30/views-web-page"
+cd "/public_html/demo.sandienmay.com/resources/views/web/page"
+get "search.blade.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-30/views-components-fe"
+cd "/public_html/demo.sandienmay.com/resources/views/components/fe"
+get "products.blade.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-30/views-web-cart"
+cd "/public_html/demo.sandienmay.com/resources/views/web/cart"
+get "index.blade.php"
+
+exit

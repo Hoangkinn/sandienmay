@@ -1,0 +1,25 @@
+# De 4 file upload-fix len demo (05/11) - co backup + get-back doi chieu md5
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+# 1. (backup ban host da nam o deploy/backup-host-2026-11-05/upload-fix-get/, khong de file .bak trong app/)
+lcd "D:/laragon/www/sandienmay/app/Http/Controllers/Backend"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+put "AttributeController.php" "AttributeController.php"
+put "ReviewController.php" "ReviewController.php"
+put "SettingFieldController.php" "SettingFieldController.php"
+lcd "D:/laragon/www/sandienmay/app/Helpers"
+cd "/public_html/demo.sandienmay.com/app/Helpers"
+put "UploadImageHelper.php" "UploadImageHelper.php"
+
+# 3. get-back phuc vu md5
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/upload-fix-get/after"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+get "AttributeController.php" "got-AttributeController.php"
+get "ReviewController.php" "got-ReviewController.php"
+get "SettingFieldController.php" "got-SettingFieldController.php"
+cd "/public_html/demo.sandienmay.com/app/Helpers"
+get "UploadImageHelper.php" "got-UploadImageHelper.php"
+exit

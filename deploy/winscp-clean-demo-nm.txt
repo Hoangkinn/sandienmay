@@ -1,0 +1,10 @@
+# Don rac demo — xoa node_modules (dev deps webpack/babel, server khong build)
+# Chi duong dan tuyet doi trong demo.sandienmay.com
+option batch abort
+option confirm off
+open ynlbdgfvhosting@103.75.185.69
+rmdir "/public_html/demo.sandienmay.com/node_modules"
+echo "----- kiem tra lai -----"
+cd "/public_html/demo.sandienmay.com"
+ls "node_modules"
+exit

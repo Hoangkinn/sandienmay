@@ -1,0 +1,22 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/video-noi-bat/app-Backend"
+cd   "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+get  "VideoController.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/video-noi-bat/css-new-src"
+cd   "/public_html/demo.sandienmay.com/public/css-new/src"
+get  "home-v2.css"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/video-noi-bat/css-new-dist"
+cd   "/public_html/demo.sandienmay.com/public/css-new/dist"
+get  "home-v2.min.css"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/video-noi-bat/views-web-home"
+cd   "/public_html/demo.sandienmay.com/resources/views/web/home"
+get  "index.blade.php"
+
+exit

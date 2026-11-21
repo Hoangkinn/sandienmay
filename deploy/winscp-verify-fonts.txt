@@ -1,0 +1,19 @@
+# Vong 9 (31/10) — lay nguoc 7 file sau khi upload de doi md5 voi local
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/verify-fonts"
+cd "/public_html/demo.sandienmay.com/public/css-new/fonts/inter"
+get "inter-latin-wght.woff2"
+get "inter-latin-ext-wght.woff2"
+get "inter-vietnamese-wght.woff2"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+get "base.min.css"
+cd "/public_html/demo.sandienmay.com/public/css-new/src"
+get "base.css"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+get "layout.blade.php"
+cd "/public_html/demo.sandienmay.com/resources/views/errors"
+get "404.blade.php"
+exit

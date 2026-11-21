@@ -1,0 +1,34 @@
+# Don rac demo (03/11) — CHI trong /public_html/demo.sandienmay.com
+# Khong dong .env that, khong dong sessions, khong dong site khac.
+option batch abort
+option confirm off
+open ynlbdgfvhosting@103.75.185.69
+echo "----- 1. file rac trong app root -----"
+rm "/public_html/demo.sandienmay.com/.env.bak-dbfix"
+rm "/public_html/demo.sandienmay.com/sql.sql"
+echo "----- 2. auth.md trong public -----"
+rm "/public_html/demo.sandienmay.com/public/auth.md"
+echo "----- 3. mock html trong resources/views/web -----"
+rm "/public_html/demo.sandienmay.com/resources/views/web/danh-muc.html"
+rm "/public_html/demo.sandienmay.com/resources/views/web/index.html"
+echo "----- 4. laravel.log -----"
+rm "/public_html/demo.sandienmay.com/storage/logs/laravel.log"
+echo "----- 5. blade da compile (giu thu muc views) -----"
+cd "/public_html/demo.sandienmay.com/storage/framework/views"
+rm "*.php"
+echo "----- 6. debugbar -----"
+rmdir "/public_html/demo.sandienmay.com/storage/debugbar"
+echo "----- KIEM TRA LAI -----"
+cd "/public_html/demo.sandienmay.com"
+ls "*.bak*"
+ls "*.sql"
+ls "*.log"
+cd "/public_html/demo.sandienmay.com/public"
+ls "*.md"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+ls "*.html"
+cd "/public_html/demo.sandienmay.com/storage/framework/views"
+ls
+cd "/public_html/demo.sandienmay.com/storage"
+ls
+exit

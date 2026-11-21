@@ -1,0 +1,33 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/deploy/prod-sql/backup-host-2026-11-14/css-dist"
+cd   "/public_html/sandienmay.com/public/css-new/dist"
+get  "layout.min.css"
+
+lcd "D:/laragon/www/sandienmay/deploy/prod-sql/backup-host-2026-11-14/js-fe"
+cd   "/public_html/sandienmay.com/public/js-new/fe"
+get  "main.min.js"
+
+echo "===== backup xong ====="
+
+lcd "D:/laragon/www/sandienmay/public/css-new/dist"
+cd   "/public_html/sandienmay.com/public/css-new/dist"
+put  "layout.min.css"
+
+lcd "D:/laragon/www/sandienmay/public/js-new/fe"
+cd   "/public_html/sandienmay.com/public/js-new/fe"
+put  "main.min.js"
+
+echo "===== upload xong ====="
+
+lcd "D:/laragon/www/sandienmay/deploy/prod-sql/verify-host"
+cd   "/public_html/sandienmay.com/public/css-new/dist"
+get  "layout.min.css"
+cd   "/public_html/sandienmay.com/public/js-new/fe"
+get  "main.min.js"
+
+echo "===== verify xong ====="
+exit

@@ -1,0 +1,17 @@
+# Don file probe + upload script don anh demo (05/11)
+# CHI trong /public_html/demo.sandienmay.com/public
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+echo "----- 1. xoa file probe/audit -----"
+rm "/public_html/demo.sandienmay.com/public/zz-cache-probe.css"
+rm "/public_html/demo.sandienmay.com/public/zz-image-audit.php"
+rm "/public_html/demo.sandienmay.com/public/storage/zz-cache-probe.png"
+echo "----- 2. upload zz-image-fix.php -----"
+lcd "D:/laragon/www/sandienmay/deploy/image-cleanup"
+cd "/public_html/demo.sandienmay.com/public"
+put "zz-image-fix.php" "zz-image-fix.php"
+echo "----- 3. kiem tra -----"
+ls -l "zz-*"
+exit

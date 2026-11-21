@@ -1,0 +1,10 @@
+# Vong 15 (03/11) — push New_ProductController.php (fix <title>/<meta desc> trang san pham).
+# Chay SAU winscp-backup-seo-product.txt. MOI 1 file. KHONG dong .env, khong SQL.
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/app/Http/Controllers/Frontend"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Frontend"
+put "New_ProductController.php"
+exit

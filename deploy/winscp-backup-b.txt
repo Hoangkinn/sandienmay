@@ -1,0 +1,12 @@
+# Backup 2 file ghi de cua Nhom B (31/10)
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-31/views-home"
+cd "/public_html/demo.sandienmay.com/resources/views/web/home"
+get "index.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-31/css-dist"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+get "home-v2.min.css"
+exit

@@ -1,0 +1,18 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+echo "===== /public_html/sansosanh.vn ====="
+cd "/public_html/sansosanh.vn"
+ls
+
+echo "===== co phai Laravel? ====="
+cd "/public_html/sansosanh.vn"
+ls "bootstrap"
+ls "vendor"
+
+echo "===== .env (dong DB) ====="
+lcd "D:/laragon/www/sandienmay/deploy"
+get ".env" "sansosanh-env.txt"
+exit

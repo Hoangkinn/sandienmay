@@ -1,0 +1,15 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+echo "===== /public_html ====="
+cd "/public_html"
+ls
+
+lcd "D:/laragon/www/sandienmay/deploy/prod-htaccess-now"
+cd "/public_html/sandienmay.com"
+get ".htaccess" "sandienmay-com-.htaccess"
+
+echo "===== noi dung lay ve ====="
+exit

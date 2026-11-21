@@ -1,0 +1,9 @@
+# Vong 6b: preload anh LCP mobile khi banner khong co image_mobile
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/resources/views/web/home"
+cd "/public_html/demo.sandienmay.com/resources/views/web/home"
+put "index.blade.php"
+exit

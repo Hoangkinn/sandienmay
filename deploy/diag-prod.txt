@@ -1,0 +1,149 @@
+===== 1. MOI TRUONG =====
+PHP_VERSION                                 8.3.36
+laravel                                     12.41.1
+APP_ENV (config)                            production
+APP_DEBUG                                   CO
+APP_URL                                     https://sandienmay.com/
+APP_NO_INDEX (noindex dang bat?)            CO
+DB::getDatabaseName()                       ynlbdgfvhosting_sandienmay
+DB host                                     127.0.0.1
+DB username                                 ynlbdgfvhosting_sandienmay
+
+===== 2. KHOANH CACH DEMO / PROD =====
+demo storage co doc duoc tu site nay?       KHONG
+
+===== 3. KHO ANH CUA SITE NAY =====
+public/storage la symlink?                  KHONG
+public/storage realpath                     /home/ynlbdgfvhosting/public_html/sandienmay.com/public/storage
+public/storage == storage/app/public?       KHONG
+public/storage: file / bytes                72 / 6.5 MB
+storage/app/public: file / bytes            0 / 0 MB
+
+===== 4. DU LIEU TRONG DB dang dung =====
+m_products                                  rows = 29
+m_posts                                     rows = 31
+m_categories                                rows = 29
+m_orders                                    rows = 5
+m_comments                                  rows = 32
+contacts                                    rows = 1
+m_customers                                 rows = 1
+email_subscribers                           rows = 3
+histories                                   rows = 237
+brands                                      rows = 7
+reviews                                     rows = 0
+m_category_price_bands                      rows = 4
+m_category_specs                            rows = 4
+m_product_images                            rows = 37
+m_settings                                  rows = 8
+m_setting_fields                            rows = 42
+migrations                                  rows = 5
+m_products max(id)                          2337
+m_posts max(id)                             1986
+m_orders max(id)                            448
+san pham slug bat dau "demo-"               7
+bai viet slug bat dau "demo-"               28
+bai viet noi dung chua "demo.sandienmay.com"0
+setting gia tri chua "demo.sandienmay.com"  0
+
+===== 5. ANH DB TRO MA DISC KHONG CO =====
+da kiem tra                                 37 duong dan
+thieu                                       16 duong dan
+   404  storage/photos/39/1793608664_demo-sp-2.png   <- m_product_images.url,m_product_images.thumb_url
+   404  storage/photos/39/1793688706_sp.jpg   <- m_product_images.url,m_product_images.thumb_url
+   404  storage/photos/39/_DSC6964.jpg   <- m_product_images.url
+   404  storage/photos/39/thumbs/_DSC6964.jpg   <- m_product_images.thumb_url
+   404  storage/vacuum-cleaner-1793256008.png   <- m_categories.image
+   404  storage/scrubber-1793256024.png   <- m_categories.image
+   404  storage/street-sweeper-1793256037.png   <- m_categories.image
+   404  storage/pressure-washer-1793256058.png   <- m_categories.image
+   404  storage/cooling-1793256069.png   <- m_categories.image
+   404  storage/camera-1793256079.png   <- m_categories.image
+   404  storage/grease-1793256149.png   <- m_categories.image
+   404  storage/equipment-1793256115.png   <- m_categories.image
+   404  storage/in-stock-1793256132.png   <- m_categories.image
+   404  storage/1793332230_6ae41406f13ec.webp   <- m_banners.image
+   404  storage/1793332230_mobile_6ae41406f3c05.webp   <- m_banners.image_mobile
+   404  storage/1675484382.png   <- m_setting_fields.field_value
+
+===== 6. FILE RAC o goc site + public =====
+-- /home/ynlbdgfvhosting/public_html/sandienmay.com
+   DIR  .continue                          1 file       0.0 MB
+   FILE .editorconfig                      258 bytes  2025-12-05 11:59
+   FILE .env                              1373 bytes  2026-11-05 12:19
+   FILE .env.example                      1075 bytes  2026-10-20 14:06
+   DIR  .git                             458 file      47.5 MB
+   FILE .gitattributes                     152 bytes  2025-12-05 11:59
+   FILE .gitignore                          50 bytes  2026-06-10 08:11
+   FILE .htaccess                          329 bytes  2026-07-03 16:04
+   FILE .styleci.yml                       162 bytes  2025-12-05 13:37
+   DIR  .well-known                        0 file       0.0 MB
+   FILE README.md                         4022 bytes  2026-06-10 08:11
+   DIR  app                              225 file       0.5 MB
+   FILE artisan                           1686 bytes  2025-12-05 13:37
+   DIR  bootstrap                          5 file       0.0 MB
+   DIR  cgi-bin                            0 file       0.0 MB
+   FILE composer.json                     1522 bytes  2026-08-20 16:14
+   FILE composer.lock                   257202 bytes  2026-06-10 08:11
+   DIR  config                            15 file       0.1 MB
+   DIR  database                          16 file       0.0 MB
+   DIR  deploy                           145 file       0.6 MB
+   DIR  lang                               4 file       0.0 MB
+   DIR  node_modules                   16065 file      79.4 MB
+   FILE package-lock.json               654263 bytes  2026-10-26 08:34
+   FILE package.json                       974 bytes  2026-10-26 08:35
+   FILE phpunit.xml                       1175 bytes  2025-12-05 13:37
+   DIR  public                           457 file      26.9 MB
+   DIR  resources                        147 file       1.0 MB
+   DIR  routes                             5 file       0.0 MB
+   DIR  scripts                            1 file       0.0 MB
+   DIR  storage                          523 file       3.5 MB
+   DIR  tests                              9 file       0.0 MB
+   DIR  vendor                          7350 file      31.9 MB
+-- /home/ynlbdgfvhosting/public_html/sandienmay.com/public
+   FILE .htaccess                         4391 bytes  2026-11-05 11:05
+   DIR  css                               39 file       3.3 MB
+   DIR  css-new                           33 file       1.9 MB
+   FILE favicon.ico                          0 bytes  2025-12-05 11:59
+   DIR  fonts                             18 file       1.9 MB
+   DIR  images                            45 file       1.3 MB
+   FILE index.php                         1709 bytes  2025-12-05 13:37
+   DIR  js                               185 file       6.9 MB
+   DIR  js-new                            12 file       0.1 MB
+   FILE mix-manifest.json                   57 bytes  2025-12-05 13:37
+   FILE robots.txt                         224 bytes  2026-10-26 08:34
+   DIR  storage                           72 file       6.5 MB
+   DIR  uploads                            9 file       0.8 MB
+   DIR  vendor                            23 file       1.3 MB
+   DIR  webfonts                          15 file       2.8 MB
+   FILE zz-diag.php                       8071 bytes  2026-11-05 12:39
+
+===== 7. CACHE / LOG =====
+bootstrap/cache noi dung                    packages.php, services.php
+storage/logs: file / bytes                  1 / 0.1 MB
+framework/views (blade compiled)            129 file
+storage/framework/                          cache, sessions, views
+disk con trong (public/)                    976.39 GB
+
+===== 8. 16 ANH homepage bao 404 =====
+   storage/vacuum-cleaner-1793256008.png                                    prod=404 demo=-
+   storage/scrubber-1793256024.png                                          prod=404 demo=-
+   storage/street-sweeper-1793256037.png                                    prod=404 demo=-
+   storage/pressure-washer-1793256058.png                                   prod=404 demo=-
+   storage/cooling-1793256069.png                                           prod=404 demo=-
+   storage/camera-1793256079.png                                            prod=404 demo=-
+   storage/equipment-1793256115.png                                         prod=404 demo=-
+   storage/in-stock-1793256132.png                                          prod=404 demo=-
+   storage/grease-1793256149.png                                            prod=404 demo=-
+   storage/1793073123_do-dai-tay-can-barrier-tu-dong-bst-170.webp           prod=404 demo=-
+   storage/1793332230_6ae41406f13ec.webp                                    prod=404 demo=-
+   storage/1793332230_mobile_6ae41406f3c05.webp                             prod=404 demo=-
+   storage/photos/39/1793688706_sp.jpg                                      prod=404 demo=-
+   storage/1793065875_114e1c3ee4f24c335e153fd99eb46ac1.jpg                  prod=404 demo=-
+   images/no-image.png                                                      prod=404 demo=-
+   storage/photos/39/_DSC6964.jpg                                           prod=404 demo=-
+
+===== 9. DB NAO CON TON TAI (tu goi lenh hien tai) =====
+   database: information_schema
+   database: ynlbdgfvhosting_sandienmay
+   grants: GRANT USAGE ON *.* TO `ynlbdgfvhosting_sandienmay`@`localhost` IDENTIFIED BY PASSWORD '*47A9215533EE0F0BB908E57A2C15CB382ECDF61E'
+   grants: GRANT ALL PRIVILEGES ON `ynlbdgfvhosting\_sandienmay`.* TO `ynlbdgfvhosting_sandienmay`@`localhost`

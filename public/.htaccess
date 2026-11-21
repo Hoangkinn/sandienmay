@@ -1,0 +1,103 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # === THÊM ĐOẠN NÀY ĐỂ MỞ KHÓA THƯ MỤC .WELL-KNOWN ===
+    RewriteCond %{REQUEST_URI} ^/\.well-known/.*$
+    RewriteRule ^ - [L]
+    # ====================================================
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+
+# Enable Gzip Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE application/x-font
+    AddOutputFilterByType DEFLATE application/x-font-opentype
+    AddOutputFilterByType DEFLATE application/x-font-otf
+    AddOutputFilterByType DEFLATE application/x-font-truetype
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE image/x-icon
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+</IfModule>
+# Enable Browser Caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus  1 year"
+    
+    # Tăng thời gian cache CSS lên 30 ngày
+    ExpiresByType text/css "access plus 30 days"
+    
+    ExpiresByType application/pdf "access plus 1 month"
+    
+    # Tăng thời gian cache JS lên 30 ngày
+    ExpiresByType text/javascript "access plus 30 days"
+    ExpiresByType application/javascript "access plus 30 days"
+    
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# Set Cache-Control Headers for Static Files
+# LSWS trên host không đánh giá điều kiện env= bên trong <FilesMatch> (do đo mà sai),
+# nên phân nhánh ngay trong SetEnvIf: một biến cho ảnh upload, một biến cho asset theme.
+<IfModule mod_setenvif.c>
+    # Ảnh upload nằm trong /storage/ có tên do hệ thống sinh ra và không bao giờ bị ghi đè
+    # (UploadImageHelper thêm "-1", "-2" khi trùng) -> mới thay ảnh là ra URL khác, an toàn để cache 1 năm.
+    SetEnvIfNoCase Request_URI "^/storage/.+\.(jpg|jpeg|png|gif|webp|svg)$" zz_storage_img=1
+    # CSS, JS và ảnh giao diện (/images/, /css-new/) giữ nguyên tên qua mỗi lần deploy
+    # nên chỉ cache 30 ngày, nếu không người dùng sẽ thấy style/ảnh cũ.
+    SetEnvIfNoCase Request_URI "^(?!/storage/).+\.(ico|jpe?g|png|gif|webp|svg|css|js|woff2?|ttf|otf|pdf|swf|flv)$" zz_theme_asset=1
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Cache-Control "max-age=31536000, public, immutable" env=zz_storage_img
+    Header set Cache-Control "max-age=2592000, public" env=zz_theme_asset
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Ép kiểu header cho toàn bộ thư mục .well-known
+    <If "%{REQUEST_URI} =~ m#/\.well-known/#">
+        Header set Content-Type "application/json; charset=UTF-8"
+    </If>
+
+    # Ép kiểu header cho file auth.md ở gốc
+    <FilesMatch "^auth\.md$">
+        Header set Content-Type "text/markdown; charset=UTF-8"
+    </FilesMatch>
+</IfModule>

@@ -1,0 +1,11 @@
+# Upload harness kiem tra duong upload anh tren demo (05/11) + get-back doi chieu md5
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/image-cleanup"
+cd "/public_html/demo.sandienmay.com/public"
+put "zz-upload-check.php" "zz-upload-check.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/image-batch/verify"
+get "zz-upload-check.php" "zz-upload-check.getback.php"
+exit

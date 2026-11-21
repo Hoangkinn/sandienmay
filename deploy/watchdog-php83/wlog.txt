@@ -1,0 +1,13 @@
+batch           abort     
+confirm         off       
+transfer        binary    
+In scripting you should not rely on saved sites, use this command instead:
+open ftp://ynlbdgfvhosting:***@103.75.185.69/
+Connecting to 103.75.185.69 ...
+Connected
+Starting the session...
+Session started.
+Active session: [1] ynlbdgfvhosting@103.75.185.69
+D:\laragon\www\sandienmay\deploy\watchdog-php83
+/public_html/sandienmay.com
+.htaccess                 |          610 B |    0.0 KB/s | binary | 100%

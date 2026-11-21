@@ -1,0 +1,20 @@
+User-agent: *
+
+Disallow: /backend
+
+Disallow: /public
+
+Disallow: /ajax/
+
+Disallow: /*?sort=
+
+Disallow: /*?price=
+
+Disallow: /cart/
+
+Disallow: /payment/store
+
+
+
+
+Sitemap: https://sandienmay.com/sitemap.xml

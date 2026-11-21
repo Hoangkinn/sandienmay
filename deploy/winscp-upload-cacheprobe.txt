@@ -1,0 +1,11 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/public/storage"
+cd "/public_html/demo.sandienmay.com/public/storage"
+put "zz-cache-probe.png"
+lcd "D:/laragon/www/sandienmay/public"
+cd "/public_html/demo.sandienmay.com/public"
+put "zz-cache-probe.css"
+exit

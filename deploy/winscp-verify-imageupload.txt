@@ -1,0 +1,21 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/image-upload-verify/app-Helpers"
+cd   "/public_html/demo.sandienmay.com/app/Helpers"
+get  "UploadImageHelper.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/image-upload-verify/app-Backend"
+cd   "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+get  "DropzoneController.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/image-upload-verify/views-web"
+cd   "/public_html/demo.sandienmay.com/resources/views/web"
+get  "header.blade.php"
+get  "mobile-menu.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/image-upload-verify/views-web-home"
+cd   "/public_html/demo.sandienmay.com/resources/views/web/home"
+get  "index.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/image-upload-verify/views-frontend"
+cd   "/public_html/demo.sandienmay.com/resources/views/frontend"
+get  "header.blade.php"
+exit

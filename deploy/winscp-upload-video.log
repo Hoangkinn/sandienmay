@@ -1,0 +1,397 @@
+. 2026-11-06 09:52:28.143 --------------------------------------------------------------------------
+. 2026-11-06 09:52:28.147 WinSCP Version 6.5.6 (Build 16502 2026-03-25) (OS 10.0.26200 – Windows 11 Pro)
+. 2026-11-06 09:52:28.147 Configuration: HKCU\Software\Martin Prikryl\WinSCP 2\
+. 2026-11-06 09:52:28.147 Log level: Normal
+. 2026-11-06 09:52:28.147 Local account: DESKTOP-BGDMS3V\PC
+. 2026-11-06 09:52:28.147 Working directory: D:\laragon\www\sandienmay
+. 2026-11-06 09:52:28.147 Process ID: 22916
+. 2026-11-06 09:52:28.161 Ancestor processes: WinSCP, bash, bash, bash, Qoder, ...
+. 2026-11-06 09:52:28.161 Command-line: "C:\Program Files (x86)\WinSCP\winscp.exe" /console=6.5.6 /consoleinstance=_10328_130 "/script=D:\laragon\www\sandienmay\deploy\winscp-upload-video.txt" "/log=D:\laragon\www\sandienmay\deploy\winscp-upload-video.log" 
+. 2026-11-06 09:52:28.162 Time zone: Current: GMT+7 (SE Asia Standard Time), No DST
+. 2026-11-06 09:52:28.162 Login time: Friday, November 6, 2026 9:52:28 AM
+. 2026-11-06 09:52:28.162 --------------------------------------------------------------------------
+. 2026-11-06 09:52:28.162 Script: Retrospectively logging previous script records:
+> 2026-11-06 09:52:28.162 Script: option batch abort
+< 2026-11-06 09:52:28.162 Script: batch           abort     
+> 2026-11-06 09:52:28.162 Script: option confirm off
+< 2026-11-06 09:52:28.162 Script: confirm         off       
+> 2026-11-06 09:52:28.162 Script: option transfer binary
+< 2026-11-06 09:52:28.162 Script: transfer        binary    
+> 2026-11-06 09:52:28.162 Script: open ynlbdgfvhosting@103.75.185.69
+< 2026-11-06 09:52:28.162 Script: In scripting you should not rely on saved sites, use this command instead:
+< 2026-11-06 09:52:28.162 Script: open ftp://ynlbdgfvhosting:***@103.75.185.69/
+. 2026-11-06 09:52:28.162 --------------------------------------------------------------------------
+. 2026-11-06 09:52:28.162 Session name: ynlbdgfvhosting@103.75.185.69 (Site)
+. 2026-11-06 09:52:28.162 Host name: 103.75.185.69 (Port: 21)
+. 2026-11-06 09:52:28.162 User name: ynlbdgfvhosting (Password: Yes, Key file: No, Passphrase: No)
+. 2026-11-06 09:52:28.162 Transfer Protocol: FTP
+. 2026-11-06 09:52:28.162 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2026-11-06 09:52:28.162 Disable Nagle: No
+. 2026-11-06 09:52:28.162 Proxy: None
+. 2026-11-06 09:52:28.162 Send buffer: 262144
+. 2026-11-06 09:52:28.162 UTF: Auto
+. 2026-11-06 09:52:28.162 FTPS: None [Client certificate: No]
+. 2026-11-06 09:52:28.162 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2026-11-06 09:52:28.162 Local directory: D:\laragon\www\sandienmay, Remote directory: /public_html/demo.sandienmay.com/resources/views/web/home, Update: Yes, Cache: Yes
+. 2026-11-06 09:52:28.162 Cache directory changes: Yes, Permanent: Yes
+. 2026-11-06 09:52:28.162 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2026-11-06 09:52:28.162 Timezone offset: 0h 0m
+. 2026-11-06 09:52:28.162 --------------------------------------------------------------------------
+< 2026-11-06 09:52:28.185 Script: Connecting to 103.75.185.69 ...
+. 2026-11-06 09:52:28.185 Connecting to 103.75.185.69 ...
+. 2026-11-06 09:52:28.189 Connected with 103.75.185.69. Waiting for welcome message...
+< 2026-11-06 09:52:28.192 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+< 2026-11-06 09:52:28.192 220-You are user number 2 of 50 allowed.
+< 2026-11-06 09:52:28.192 220-Local time is now 09:52. Server port: 21.
+< 2026-11-06 09:52:28.192 220-This is a private system - No anonymous login
+< 2026-11-06 09:52:28.192 220-IPv6 connections are also welcome on this server.
+< 2026-11-06 09:52:28.192 220 You will be disconnected after 15 minutes of inactivity.
+> 2026-11-06 09:52:28.192 USER ynlbdgfvhosting
+< 2026-11-06 09:52:28.196 331 User ynlbdgfvhosting OK. Password required
+> 2026-11-06 09:52:28.196 PASS ********************
+< 2026-11-06 09:52:28.236 230 OK. Current restricted directory is /
+> 2026-11-06 09:52:28.237 SYST
+< 2026-11-06 09:52:28.239 215 UNIX Type: L8
+> 2026-11-06 09:52:28.239 FEAT
+< 2026-11-06 09:52:28.242 211-Extensions supported:
+< 2026-11-06 09:52:28.242  UTF8
+< 2026-11-06 09:52:28.242  EPRT
+< 2026-11-06 09:52:28.242  IDLE
+< 2026-11-06 09:52:28.242  MDTM
+< 2026-11-06 09:52:28.242  SIZE
+< 2026-11-06 09:52:28.242  MFMT
+< 2026-11-06 09:52:28.242  REST STREAM
+< 2026-11-06 09:52:28.242  MLST type*;size*;sizd*;modify*;UNIX.mode*;UNIX.uid*;UNIX.gid*;unique*;
+< 2026-11-06 09:52:28.242  MLSD
+< 2026-11-06 09:52:28.242  PRET
+< 2026-11-06 09:52:28.242  AUTH TLS
+< 2026-11-06 09:52:28.242  PBSZ
+< 2026-11-06 09:52:28.242  PROT
+< 2026-11-06 09:52:28.242  TVFS
+< 2026-11-06 09:52:28.242  ESTA
+< 2026-11-06 09:52:28.242  PASV
+< 2026-11-06 09:52:28.242  EPSV
+< 2026-11-06 09:52:28.242  ESTP
+< 2026-11-06 09:52:28.242 211 End.
+> 2026-11-06 09:52:28.242 OPTS UTF8 ON
+< 2026-11-06 09:52:28.245 504 Unknown command
+< 2026-11-06 09:52:28.246 Script: Connected
+. 2026-11-06 09:52:28.246 Connected
+. 2026-11-06 09:52:28.246 --------------------------------------------------------------------------
+. 2026-11-06 09:52:28.246 Using FTP protocol.
+. 2026-11-06 09:52:28.246 Doing startup conversation with host.
+< 2026-11-06 09:52:28.246 Script: Starting the session...
+> 2026-11-06 09:52:28.246 PWD
+< 2026-11-06 09:52:28.248 257 "/" is your current location
+. 2026-11-06 09:52:28.248 Changing directory to "/public_html/demo.sandienmay.com/resources/views/web/home".
+> 2026-11-06 09:52:28.248 CWD /public_html/demo.sandienmay.com/resources/views/web/home
+< 2026-11-06 09:52:28.251 250 OK. Current directory is /public_html/demo.sandienmay.com/resources/views/web/home
+. 2026-11-06 09:52:28.251 Getting current directory name.
+> 2026-11-06 09:52:28.251 PWD
+< 2026-11-06 09:52:28.254 257 "/public_html/demo.sandienmay.com/resources/views/web/home" is your current location
+. 2026-11-06 09:52:28.254 Startup conversation with host finished.
+< 2026-11-06 09:52:28.254 Script: Session started.
+< 2026-11-06 09:52:28.254 Script: Active session: [1] ynlbdgfvhosting@103.75.185.69
+> 2026-11-06 09:52:28.254 Script: lcd "D:/laragon/www/sandienmay/app/Http/Controllers/Backend"
+< 2026-11-06 09:52:28.254 Script: D:\laragon\www\sandienmay\app\Http\Controllers\Backend
+> 2026-11-06 09:52:28.254 Script: cd   "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+. 2026-11-06 09:52:28.254 Cached directory change via "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend" to "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend".
+. 2026-11-06 09:52:28.254 Getting current directory name.
+< 2026-11-06 09:52:28.254 Script: /public_html/demo.sandienmay.com/app/Http/Controllers/Backend
+> 2026-11-06 09:52:28.254 Script: put  "VideoController.php"
+. 2026-11-06 09:52:28.254 Copying 1 files/directories to remote directory "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend" - total size: 5,821
+. 2026-11-06 09:52:28.254   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0001; Resume: S (102400); CalcS: No; Mask: 
+. 2026-11-06 09:52:28.254   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2026-11-06 09:52:28.254   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2026-11-06 09:52:28.254 File: 'VideoController.php' [2026-11-06T02:09:17.363Z] [5821]
+. 2026-11-06 09:52:28.255 Copying "VideoController.php" to remote directory started.
+. 2026-11-06 09:52:28.255 Binary transfer mode selected.
+. 2026-11-06 09:52:28.255 Starting upload of D:\laragon\www\sandienmay\app\Http\Controllers\Backend\VideoController.php
+> 2026-11-06 09:52:28.255 CWD /public_html/demo.sandienmay.com/app/Http/Controllers/Backend
+< 2026-11-06 09:52:28.257 250 OK. Current directory is /public_html/demo.sandienmay.com/app/Http/Controllers/Backend
+> 2026-11-06 09:52:28.257 PWD
+< 2026-11-06 09:52:28.261 257 "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend" is your current location
+> 2026-11-06 09:52:28.261 TYPE I
+< 2026-11-06 09:52:28.268 200 TYPE is now 8-bit binary
+> 2026-11-06 09:52:28.268 PASV
+< 2026-11-06 09:52:28.270 227 Entering Passive Mode (103,75,185,69,208,186)
+> 2026-11-06 09:52:28.270 STOR VideoController.php
+. 2026-11-06 09:52:28.270 Connecting to 103.75.185.69:53434 ...
+< 2026-11-06 09:52:28.276 150 Accepted data connection
+< 2026-11-06 09:52:28.281 226-File successfully transferred
+< 2026-11-06 09:52:28.281 226 0.004 seconds (measured here), 1.57 Mbytes per second
+> 2026-11-06 09:52:28.281 MFMT 20261106020917 VideoController.php
+< 2026-11-06 09:52:28.284 213 UTIME OK
+. 2026-11-06 09:52:28.284 Upload successful
+. 2026-11-06 09:52:28.284 Transfer done: 'VideoController.php' => '/public_html/demo.sandienmay.com/app/Http/Controllers/Backend/VideoController.php' [5821]
+. 2026-11-06 09:52:28.284 Copying finished: Transferred: 5,821, Elapsed: 0:00:00, CPS: 194,033/s
+> 2026-11-06 09:52:28.284 Script: lcd "D:/laragon/www/sandienmay/public/css-new/src"
+< 2026-11-06 09:52:28.284 Script: D:\laragon\www\sandienmay\public\css-new\src
+> 2026-11-06 09:52:28.284 Script: cd   "/public_html/demo.sandienmay.com/public/css-new/src"
+. 2026-11-06 09:52:28.284 Cached directory change via "/public_html/demo.sandienmay.com/public/css-new/src" to "/public_html/demo.sandienmay.com/public/css-new/src".
+. 2026-11-06 09:52:28.284 Getting current directory name.
+< 2026-11-06 09:52:28.284 Script: /public_html/demo.sandienmay.com/public/css-new/src
+> 2026-11-06 09:52:28.284 Script: put  "home-v2.css"
+. 2026-11-06 09:52:28.285 Copying 1 files/directories to remote directory "/public_html/demo.sandienmay.com/public/css-new/src" - total size: 22,605
+. 2026-11-06 09:52:28.285   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0001; Resume: S (102400); CalcS: No; Mask: 
+. 2026-11-06 09:52:28.285   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2026-11-06 09:52:28.285   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2026-11-06 09:52:28.285 File: 'home-v2.css' [2026-11-06T02:49:56.272Z] [22605]
+. 2026-11-06 09:52:28.285 Copying "home-v2.css" to remote directory started.
+. 2026-11-06 09:52:28.285 Binary transfer mode selected.
+. 2026-11-06 09:52:28.285 Starting upload of D:\laragon\www\sandienmay\public\css-new\src\home-v2.css
+> 2026-11-06 09:52:28.285 CWD /public_html/demo.sandienmay.com/public/css-new/src
+< 2026-11-06 09:52:28.288 250 OK. Current directory is /public_html/demo.sandienmay.com/public/css-new/src
+> 2026-11-06 09:52:28.288 PWD
+< 2026-11-06 09:52:28.290 257 "/public_html/demo.sandienmay.com/public/css-new/src" is your current location
+> 2026-11-06 09:52:28.290 TYPE I
+< 2026-11-06 09:52:28.292 200 TYPE is now 8-bit binary
+> 2026-11-06 09:52:28.292 PASV
+< 2026-11-06 09:52:28.296 227 Entering Passive Mode (103,75,185,69,247,234)
+> 2026-11-06 09:52:28.296 STOR home-v2.css
+. 2026-11-06 09:52:28.296 Connecting to 103.75.185.69:63466 ...
+< 2026-11-06 09:52:28.302 150 Accepted data connection
+< 2026-11-06 09:52:28.309 226-File successfully transferred
+< 2026-11-06 09:52:28.309 226 0.006 seconds (measured here), 3.33 Mbytes per second
+> 2026-11-06 09:52:28.309 MFMT 20261106024956 home-v2.css
+< 2026-11-06 09:52:28.312 213 UTIME OK
+. 2026-11-06 09:52:28.312 Upload successful
+. 2026-11-06 09:52:28.312 Transfer done: 'home-v2.css' => '/public_html/demo.sandienmay.com/public/css-new/src/home-v2.css' [22605]
+. 2026-11-06 09:52:28.312 Copying finished: Transferred: 22,605, Elapsed: 0:00:00, CPS: 837,222/s
+> 2026-11-06 09:52:28.312 Script: lcd "D:/laragon/www/sandienmay/public/css-new/dist"
+< 2026-11-06 09:52:28.313 Script: D:\laragon\www\sandienmay\public\css-new\dist
+> 2026-11-06 09:52:28.313 Script: cd   "/public_html/demo.sandienmay.com/public/css-new/dist"
+. 2026-11-06 09:52:28.313 Cached directory change via "/public_html/demo.sandienmay.com/public/css-new/dist" to "/public_html/demo.sandienmay.com/public/css-new/dist".
+. 2026-11-06 09:52:28.313 Getting current directory name.
+< 2026-11-06 09:52:28.313 Script: /public_html/demo.sandienmay.com/public/css-new/dist
+> 2026-11-06 09:52:28.313 Script: put  "home-v2.min.css"
+. 2026-11-06 09:52:28.313 Copying 1 files/directories to remote directory "/public_html/demo.sandienmay.com/public/css-new/dist" - total size: 12,381
+. 2026-11-06 09:52:28.313   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0001; Resume: S (102400); CalcS: No; Mask: 
+. 2026-11-06 09:52:28.313   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2026-11-06 09:52:28.313   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2026-11-06 09:52:28.313 File: 'home-v2.min.css' [2026-11-06T02:49:59.455Z] [12381]
+. 2026-11-06 09:52:28.313 Copying "home-v2.min.css" to remote directory started.
+. 2026-11-06 09:52:28.313 Binary transfer mode selected.
+. 2026-11-06 09:52:28.314 Starting upload of D:\laragon\www\sandienmay\public\css-new\dist\home-v2.min.css
+> 2026-11-06 09:52:28.314 CWD /public_html/demo.sandienmay.com/public/css-new/dist
+< 2026-11-06 09:52:28.316 250 OK. Current directory is /public_html/demo.sandienmay.com/public/css-new/dist
+> 2026-11-06 09:52:28.316 PWD
+< 2026-11-06 09:52:28.319 257 "/public_html/demo.sandienmay.com/public/css-new/dist" is your current location
+> 2026-11-06 09:52:28.319 TYPE I
+< 2026-11-06 09:52:28.322 200 TYPE is now 8-bit binary
+> 2026-11-06 09:52:28.323 PASV
+< 2026-11-06 09:52:28.325 227 Entering Passive Mode (103,75,185,69,240,90)
+> 2026-11-06 09:52:28.325 STOR home-v2.min.css
+. 2026-11-06 09:52:28.325 Connecting to 103.75.185.69:61530 ...
+< 2026-11-06 09:52:28.331 150 Accepted data connection
+< 2026-11-06 09:52:28.334 226-File successfully transferred
+< 2026-11-06 09:52:28.334 226 0.004 seconds (measured here), 3.22 Mbytes per second
+> 2026-11-06 09:52:28.334 MFMT 20261106024959 home-v2.min.css
+< 2026-11-06 09:52:28.337 213 UTIME OK
+. 2026-11-06 09:52:28.337 Upload successful
+. 2026-11-06 09:52:28.337 Transfer done: 'home-v2.min.css' => '/public_html/demo.sandienmay.com/public/css-new/dist/home-v2.min.css' [12381]
+. 2026-11-06 09:52:28.337 Copying finished: Transferred: 12,381, Elapsed: 0:00:00, CPS: 515,875/s
+> 2026-11-06 09:52:28.338 Script: lcd "D:/laragon/www/sandienmay/resources/views/web/home"
+< 2026-11-06 09:52:28.338 Script: D:\laragon\www\sandienmay\resources\views\web\home
+> 2026-11-06 09:52:28.338 Script: cd   "/public_html/demo.sandienmay.com/resources/views/web/home"
+. 2026-11-06 09:52:28.338 Cached directory change via "/public_html/demo.sandienmay.com/resources/views/web/home" to "/public_html/demo.sandienmay.com/resources/views/web/home".
+. 2026-11-06 09:52:28.338 Getting current directory name.
+< 2026-11-06 09:52:28.338 Script: /public_html/demo.sandienmay.com/resources/views/web/home
+> 2026-11-06 09:52:28.338 Script: put  "index.blade.php"
+. 2026-11-06 09:52:28.338 Copying 1 files/directories to remote directory "/public_html/demo.sandienmay.com/resources/views/web/home" - total size: 26,649
+. 2026-11-06 09:52:28.338   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0001; Resume: S (102400); CalcS: No; Mask: 
+. 2026-11-06 09:52:28.338   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2026-11-06 09:52:28.338   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2026-11-06 09:52:28.338 File: 'index.blade.php' [2026-11-06T02:46:45.584Z] [26649]
+. 2026-11-06 09:52:28.338 Copying "index.blade.php" to remote directory started.
+. 2026-11-06 09:52:28.338 Binary transfer mode selected.
+. 2026-11-06 09:52:28.338 Starting upload of D:\laragon\www\sandienmay\resources\views\web\home\index.blade.php
+> 2026-11-06 09:52:28.338 CWD /public_html/demo.sandienmay.com/resources/views/web/home
+< 2026-11-06 09:52:28.342 250 OK. Current directory is /public_html/demo.sandienmay.com/resources/views/web/home
+> 2026-11-06 09:52:28.342 PWD
+< 2026-11-06 09:52:28.343 257 "/public_html/demo.sandienmay.com/resources/views/web/home" is your current location
+> 2026-11-06 09:52:28.343 TYPE I
+< 2026-11-06 09:52:28.350 200 TYPE is now 8-bit binary
+> 2026-11-06 09:52:28.350 PASV
+< 2026-11-06 09:52:28.354 227 Entering Passive Mode (103,75,185,69,215,196)
+> 2026-11-06 09:52:28.354 STOR index.blade.php
+. 2026-11-06 09:52:28.354 Connecting to 103.75.185.69:55236 ...
+< 2026-11-06 09:52:28.358 150 Accepted data connection
+< 2026-11-06 09:52:28.366 226-File successfully transferred
+< 2026-11-06 09:52:28.366 226 0.006 seconds (measured here), 3.96 Mbytes per second
+> 2026-11-06 09:52:28.366 MFMT 20261106024645 index.blade.php
+< 2026-11-06 09:52:28.369 213 UTIME OK
+. 2026-11-06 09:52:28.369 Upload successful
+. 2026-11-06 09:52:28.369 Transfer done: 'index.blade.php' => '/public_html/demo.sandienmay.com/resources/views/web/home/index.blade.php' [26649]
+. 2026-11-06 09:52:28.369 Copying finished: Transferred: 26,649, Elapsed: 0:00:00, CPS: 859,645/s
+> 2026-11-06 09:52:28.369 Script: echo "===== verify: lay file ve de so md5 ====="
+< 2026-11-06 09:52:28.369 Script: "===== verify: lay file ve de so md5 ====="
+> 2026-11-06 09:52:28.369 Script: lcd "D:/laragon/www/sandienmay/deploy/verify-host-2026-11-06"
+< 2026-11-06 09:52:28.369 Script: D:\laragon\www\sandienmay\deploy\verify-host-2026-11-06
+> 2026-11-06 09:52:28.369 Script: cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+. 2026-11-06 09:52:28.369 Cached directory change via "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend" to "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend".
+. 2026-11-06 09:52:28.369 Getting current directory name.
+< 2026-11-06 09:52:28.369 Script: /public_html/demo.sandienmay.com/app/Http/Controllers/Backend
+> 2026-11-06 09:52:28.369 Script: get  "VideoController.php"
+. 2026-11-06 09:52:28.369 Listing file "VideoController.php".
+. 2026-11-06 09:52:28.370 Retrieving file information...
+> 2026-11-06 09:52:28.370 MLST /public_html/demo.sandienmay.com/app/Http/Controllers/Backend/VideoController.php
+< 2026-11-06 09:52:28.372 250-Begin
+< 2026-11-06 09:52:28.372  type=file;size=5821;modify=20261106020917;UNIX.mode=0644;UNIX.uid=1245;UNIX.gid=1249;unique=809g180081dbe; /public_html/demo.sandienmay.com/app/Http/Controllers/Backend/VideoController.php
+< 2026-11-06 09:52:28.372 250 End.
+. 2026-11-06 09:52:28.372  type=file;size=5821;modify=20261106020917;UNIX.mode=0644;UNIX.uid=1245;UNIX.gid=1249;unique=809g180081dbe; /public_html/demo.sandienmay.com/app/Http/Controllers/Backend/VideoController.php
+. 2026-11-06 09:52:28.372 Retrieving file information successful
+. 2026-11-06 09:52:28.372 VideoController.php;-;5821;2026-11-06T02:09:17.000Z;4;"1245" [0];"1249" [0];rw-r--r--;0
+. 2026-11-06 09:52:28.372 Copying 1 files/directories to local directory "D:\laragon\www\sandienmay\deploy\verify-host-2026-11-06" - total size: 5,821
+. 2026-11-06 09:52:28.372   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0001; Resume: S (102400); CalcS: No; Mask: 
+. 2026-11-06 09:52:28.372   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2026-11-06 09:52:28.372   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2026-11-06 09:52:28.372 File: '/public_html/demo.sandienmay.com/app/Http/Controllers/Backend/VideoController.php' [2026-11-06T02:09:17.000Z] [5821]
+. 2026-11-06 09:52:28.372 Copying "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend/VideoController.php" to local directory started.
+. 2026-11-06 09:52:28.372 Binary transfer mode selected.
+. 2026-11-06 09:52:28.372 Starting download of /public_html/demo.sandienmay.com/app/Http/Controllers/Backend/VideoController.php
+> 2026-11-06 09:52:28.372 CWD /public_html/demo.sandienmay.com/app/Http/Controllers/Backend
+< 2026-11-06 09:52:28.375 250 OK. Current directory is /public_html/demo.sandienmay.com/app/Http/Controllers/Backend
+> 2026-11-06 09:52:28.375 PWD
+< 2026-11-06 09:52:28.380 257 "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend" is your current location
+> 2026-11-06 09:52:28.380 TYPE I
+< 2026-11-06 09:52:28.383 200 TYPE is now 8-bit binary
+> 2026-11-06 09:52:28.383 PASV
+< 2026-11-06 09:52:28.386 227 Entering Passive Mode (103,75,185,69,247,189)
+> 2026-11-06 09:52:28.386 RETR VideoController.php
+. 2026-11-06 09:52:28.386 Connecting to 103.75.185.69:63421 ...
+< 2026-11-06 09:52:28.391 150-Accepted data connection
+< 2026-11-06 09:52:28.391 150 5.7 kbytes to download
+< 2026-11-06 09:52:28.391 226-File successfully transferred
+< 2026-11-06 09:52:28.391 226 0.000 seconds (measured here), 154.20 Mbytes per second
+. 2026-11-06 09:52:28.391 Data connection closed
+. 2026-11-06 09:52:28.391 Preserving timestamp [2026-11-06T02:09:17.000Z]
+. 2026-11-06 09:52:28.391 Download successful
+. 2026-11-06 09:52:28.392 Transfer done: '/public_html/demo.sandienmay.com/app/Http/Controllers/Backend/VideoController.php' => 'D:\laragon\www\sandienmay\deploy\verify-host-2026-11-06\VideoController.php' [5821]
+. 2026-11-06 09:52:28.392 Copying finished: Transferred: 5,821, Elapsed: 0:00:00, CPS: 291,050/s
+> 2026-11-06 09:52:28.392 Script: cd "/public_html/demo.sandienmay.com/public/css-new/src"
+. 2026-11-06 09:52:28.392 Cached directory change via "/public_html/demo.sandienmay.com/public/css-new/src" to "/public_html/demo.sandienmay.com/public/css-new/src".
+. 2026-11-06 09:52:28.392 Getting current directory name.
+< 2026-11-06 09:52:28.392 Script: /public_html/demo.sandienmay.com/public/css-new/src
+> 2026-11-06 09:52:28.392 Script: get  "home-v2.css"
+. 2026-11-06 09:52:28.392 Listing file "home-v2.css".
+. 2026-11-06 09:52:28.392 Retrieving file information...
+> 2026-11-06 09:52:28.392 MLST /public_html/demo.sandienmay.com/public/css-new/src/home-v2.css
+< 2026-11-06 09:52:28.397 250-Begin
+< 2026-11-06 09:52:28.397  type=file;size=22605;modify=20261106024956;UNIX.mode=0644;UNIX.uid=1245;UNIX.gid=1249;unique=809g1e000e515; /public_html/demo.sandienmay.com/public/css-new/src/home-v2.css
+< 2026-11-06 09:52:28.397 250 End.
+. 2026-11-06 09:52:28.398  type=file;size=22605;modify=20261106024956;UNIX.mode=0644;UNIX.uid=1245;UNIX.gid=1249;unique=809g1e000e515; /public_html/demo.sandienmay.com/public/css-new/src/home-v2.css
+. 2026-11-06 09:52:28.398 Retrieving file information successful
+. 2026-11-06 09:52:28.398 home-v2.css;-;22605;2026-11-06T02:49:56.000Z;4;"1245" [0];"1249" [0];rw-r--r--;0
+. 2026-11-06 09:52:28.398 Copying 1 files/directories to local directory "D:\laragon\www\sandienmay\deploy\verify-host-2026-11-06" - total size: 22,605
+. 2026-11-06 09:52:28.398   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0001; Resume: S (102400); CalcS: No; Mask: 
+. 2026-11-06 09:52:28.398   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2026-11-06 09:52:28.398   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2026-11-06 09:52:28.398 File: '/public_html/demo.sandienmay.com/public/css-new/src/home-v2.css' [2026-11-06T02:49:56.000Z] [22605]
+. 2026-11-06 09:52:28.398 Copying "/public_html/demo.sandienmay.com/public/css-new/src/home-v2.css" to local directory started.
+. 2026-11-06 09:52:28.398 Binary transfer mode selected.
+. 2026-11-06 09:52:28.398 Starting download of /public_html/demo.sandienmay.com/public/css-new/src/home-v2.css
+> 2026-11-06 09:52:28.398 CWD /public_html/demo.sandienmay.com/public/css-new/src
+< 2026-11-06 09:52:28.402 250 OK. Current directory is /public_html/demo.sandienmay.com/public/css-new/src
+> 2026-11-06 09:52:28.402 PWD
+< 2026-11-06 09:52:28.404 257 "/public_html/demo.sandienmay.com/public/css-new/src" is your current location
+> 2026-11-06 09:52:28.404 TYPE I
+< 2026-11-06 09:52:28.407 200 TYPE is now 8-bit binary
+> 2026-11-06 09:52:28.407 PASV
+< 2026-11-06 09:52:28.410 227 Entering Passive Mode (103,75,185,69,247,72)
+> 2026-11-06 09:52:28.410 RETR home-v2.css
+. 2026-11-06 09:52:28.410 Connecting to 103.75.185.69:63304 ...
+< 2026-11-06 09:52:28.417 150-Accepted data connection
+< 2026-11-06 09:52:28.417 150 22.1 kbytes to download
+< 2026-11-06 09:52:28.417 226-File successfully transferred
+< 2026-11-06 09:52:28.417 226 0.000 seconds (measured here), 354.59 Mbytes per second
+. 2026-11-06 09:52:28.422 Data connection closed
+. 2026-11-06 09:52:28.422 Preserving timestamp [2026-11-06T02:49:56.000Z]
+. 2026-11-06 09:52:28.422 Download successful
+. 2026-11-06 09:52:28.422 Transfer done: '/public_html/demo.sandienmay.com/public/css-new/src/home-v2.css' => 'D:\laragon\www\sandienmay\deploy\verify-host-2026-11-06\home-v2.css' [22605]
+. 2026-11-06 09:52:28.422 Copying finished: Transferred: 22,605, Elapsed: 0:00:00, CPS: 941,875/s
+> 2026-11-06 09:52:28.422 Script: cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+. 2026-11-06 09:52:28.422 Cached directory change via "/public_html/demo.sandienmay.com/public/css-new/dist" to "/public_html/demo.sandienmay.com/public/css-new/dist".
+. 2026-11-06 09:52:28.422 Getting current directory name.
+< 2026-11-06 09:52:28.422 Script: /public_html/demo.sandienmay.com/public/css-new/dist
+> 2026-11-06 09:52:28.422 Script: get  "home-v2.min.css"
+. 2026-11-06 09:52:28.422 Listing file "home-v2.min.css".
+. 2026-11-06 09:52:28.422 Retrieving file information...
+> 2026-11-06 09:52:28.422 MLST /public_html/demo.sandienmay.com/public/css-new/dist/home-v2.min.css
+< 2026-11-06 09:52:28.425 250-Begin
+< 2026-11-06 09:52:28.425  type=file;size=12381;modify=20261106024959;UNIX.mode=0644;UNIX.uid=1245;UNIX.gid=1249;unique=809g1b001aca9; /public_html/demo.sandienmay.com/public/css-new/dist/home-v2.min.css
+< 2026-11-06 09:52:28.425 250 End.
+. 2026-11-06 09:52:28.425  type=file;size=12381;modify=20261106024959;UNIX.mode=0644;UNIX.uid=1245;UNIX.gid=1249;unique=809g1b001aca9; /public_html/demo.sandienmay.com/public/css-new/dist/home-v2.min.css
+. 2026-11-06 09:52:28.425 Retrieving file information successful
+. 2026-11-06 09:52:28.425 home-v2.min.css;-;12381;2026-11-06T02:49:59.000Z;4;"1245" [0];"1249" [0];rw-r--r--;0
+. 2026-11-06 09:52:28.426 Copying 1 files/directories to local directory "D:\laragon\www\sandienmay\deploy\verify-host-2026-11-06" - total size: 12,381
+. 2026-11-06 09:52:28.426   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0001; Resume: S (102400); CalcS: No; Mask: 
+. 2026-11-06 09:52:28.426   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2026-11-06 09:52:28.426   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2026-11-06 09:52:28.426 File: '/public_html/demo.sandienmay.com/public/css-new/dist/home-v2.min.css' [2026-11-06T02:49:59.000Z] [12381]
+. 2026-11-06 09:52:28.426 Copying "/public_html/demo.sandienmay.com/public/css-new/dist/home-v2.min.css" to local directory started.
+. 2026-11-06 09:52:28.426 Binary transfer mode selected.
+. 2026-11-06 09:52:28.426 Starting download of /public_html/demo.sandienmay.com/public/css-new/dist/home-v2.min.css
+> 2026-11-06 09:52:28.426 CWD /public_html/demo.sandienmay.com/public/css-new/dist
+< 2026-11-06 09:52:28.429 250 OK. Current directory is /public_html/demo.sandienmay.com/public/css-new/dist
+> 2026-11-06 09:52:28.429 PWD
+< 2026-11-06 09:52:28.432 257 "/public_html/demo.sandienmay.com/public/css-new/dist" is your current location
+> 2026-11-06 09:52:28.432 TYPE I
+< 2026-11-06 09:52:28.435 200 TYPE is now 8-bit binary
+> 2026-11-06 09:52:28.435 PASV
+< 2026-11-06 09:52:28.438 227 Entering Passive Mode (103,75,185,69,228,115)
+> 2026-11-06 09:52:28.438 RETR home-v2.min.css
+. 2026-11-06 09:52:28.438 Connecting to 103.75.185.69:58483 ...
+< 2026-11-06 09:52:28.444 150-Accepted data connection
+< 2026-11-06 09:52:28.444 150 12.1 kbytes to download
+< 2026-11-06 09:52:28.444 226-File successfully transferred
+< 2026-11-06 09:52:28.444 226 0.000 seconds (measured here), 256.60 Mbytes per second
+. 2026-11-06 09:52:28.446 Data connection closed
+. 2026-11-06 09:52:28.446 Preserving timestamp [2026-11-06T02:49:59.000Z]
+. 2026-11-06 09:52:28.446 Download successful
+. 2026-11-06 09:52:28.447 Transfer done: '/public_html/demo.sandienmay.com/public/css-new/dist/home-v2.min.css' => 'D:\laragon\www\sandienmay\deploy\verify-host-2026-11-06\home-v2.min.css' [12381]
+. 2026-11-06 09:52:28.447 Copying finished: Transferred: 12,381, Elapsed: 0:00:00, CPS: 589,571/s
+> 2026-11-06 09:52:28.447 Script: cd "/public_html/demo.sandienmay.com/resources/views/web/home"
+. 2026-11-06 09:52:28.447 Cached directory change via "/public_html/demo.sandienmay.com/resources/views/web/home" to "/public_html/demo.sandienmay.com/resources/views/web/home".
+. 2026-11-06 09:52:28.447 Getting current directory name.
+< 2026-11-06 09:52:28.447 Script: /public_html/demo.sandienmay.com/resources/views/web/home
+> 2026-11-06 09:52:28.447 Script: get  "index.blade.php"
+. 2026-11-06 09:52:28.447 Listing file "index.blade.php".
+. 2026-11-06 09:52:28.447 Retrieving file information...
+> 2026-11-06 09:52:28.447 MLST /public_html/demo.sandienmay.com/resources/views/web/home/index.blade.php
+< 2026-11-06 09:52:28.450 250-Begin
+< 2026-11-06 09:52:28.450  type=file;size=26649;modify=20261106024645;UNIX.mode=0644;UNIX.uid=1245;UNIX.gid=1249;unique=809g170035125; /public_html/demo.sandienmay.com/resources/views/web/home/index.blade.php
+< 2026-11-06 09:52:28.450 250 End.
+. 2026-11-06 09:52:28.450  type=file;size=26649;modify=20261106024645;UNIX.mode=0644;UNIX.uid=1245;UNIX.gid=1249;unique=809g170035125; /public_html/demo.sandienmay.com/resources/views/web/home/index.blade.php
+. 2026-11-06 09:52:28.450 Retrieving file information successful
+. 2026-11-06 09:52:28.450 index.blade.php;-;26649;2026-11-06T02:46:45.000Z;4;"1245" [0];"1249" [0];rw-r--r--;0
+. 2026-11-06 09:52:28.450 Copying 1 files/directories to local directory "D:\laragon\www\sandienmay\deploy\verify-host-2026-11-06" - total size: 26,649
+. 2026-11-06 09:52:28.450   PrTime: Yes; PrRO: No; Rght: rw-r--r--; PrR: No (No); FnCs: N; RIC: 0001; Resume: S (102400); CalcS: No; Mask: 
+. 2026-11-06 09:52:28.450   TM: B; ClAr: No; RemEOF: No; RemBOM: No; CPS: 0; NewerOnly: No; EncryptNewFiles: Yes; ExcludeHiddenFiles: No; ExcludeEmptyDirectories: No; InclM: ; ResumeL: 0
+. 2026-11-06 09:52:28.450   AscM: *.*html; *.htm; *.txt; *.php; *.php3; *.cgi; *.c; *.cpp; *.h; *.pas; *.bas; *.tex; *.pl; *.js; .htaccess; *.xtml; *.css; *.cfg; *.ini; *.sh; *.xml
+. 2026-11-06 09:52:28.450 File: '/public_html/demo.sandienmay.com/resources/views/web/home/index.blade.php' [2026-11-06T02:46:45.000Z] [26649]
+. 2026-11-06 09:52:28.450 Copying "/public_html/demo.sandienmay.com/resources/views/web/home/index.blade.php" to local directory started.
+. 2026-11-06 09:52:28.450 Binary transfer mode selected.
+. 2026-11-06 09:52:28.451 Starting download of /public_html/demo.sandienmay.com/resources/views/web/home/index.blade.php
+> 2026-11-06 09:52:28.451 CWD /public_html/demo.sandienmay.com/resources/views/web/home
+< 2026-11-06 09:52:28.454 250 OK. Current directory is /public_html/demo.sandienmay.com/resources/views/web/home
+> 2026-11-06 09:52:28.454 PWD
+< 2026-11-06 09:52:28.456 257 "/public_html/demo.sandienmay.com/resources/views/web/home" is your current location
+> 2026-11-06 09:52:28.456 TYPE I
+< 2026-11-06 09:52:28.458 200 TYPE is now 8-bit binary
+> 2026-11-06 09:52:28.458 PASV
+< 2026-11-06 09:52:28.461 227 Entering Passive Mode (103,75,185,69,244,220)
+> 2026-11-06 09:52:28.461 RETR index.blade.php
+. 2026-11-06 09:52:28.461 Connecting to 103.75.185.69:62684 ...
+< 2026-11-06 09:52:28.470 150-Accepted data connection
+< 2026-11-06 09:52:28.471 150 26.0 kbytes to download
+< 2026-11-06 09:52:28.471 226-File successfully transferred
+< 2026-11-06 09:52:28.471 226 0.000 seconds (measured here), 564.00 Mbytes per second
+. 2026-11-06 09:52:28.474 Data connection closed
+. 2026-11-06 09:52:28.474 Preserving timestamp [2026-11-06T02:46:45.000Z]
+. 2026-11-06 09:52:28.474 Download successful
+. 2026-11-06 09:52:28.474 Transfer done: '/public_html/demo.sandienmay.com/resources/views/web/home/index.blade.php' => 'D:\laragon\www\sandienmay\deploy\verify-host-2026-11-06\index.blade.php' [26649]
+. 2026-11-06 09:52:28.474 Copying finished: Transferred: 26,649, Elapsed: 0:00:00, CPS: 1,110,375/s
+> 2026-11-06 09:52:28.474 Script: exit
+. 2026-11-06 09:52:28.474 Script: Exit code: 0
+. 2026-11-06 09:52:28.476 Disconnected from server

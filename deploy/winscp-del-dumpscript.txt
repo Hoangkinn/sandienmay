@@ -1,0 +1,6 @@
+option batch abort
+option confirm off
+open ynlbdgfvhosting@103.75.185.69
+cd "/public_html/demo.sandienmay.com/public"
+rm "zz-dump-sansosanh.php"
+exit

@@ -1,0 +1,8 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy"
+cd "/public_html/demo.sandienmay.com/public"
+put "zz-dump-sansosanh-ready.php" "zz-dump-sansosanh.php"
+exit

@@ -1,0 +1,16 @@
+option batch abort
+option confirm off
+option transfer binary
+open "ynlbdgfvhosting@103.75.185.69"
+lcd "D:\laragon\www\sandienmay\deploy\backup-host-2026-11-19"
+cd "/public_html/sandienmay.com/app/Http/Controllers/Frontend"
+get New_HomeController.php
+cd "/public_html/sandienmay.com/app/Services/FeServices"
+get ProductService.php
+lcd "D:\laragon\www\sandienmay"
+cd "/public_html/sandienmay.com/app/Http/Controllers/Frontend"
+put New_HomeController.php
+cd "/public_html/sandienmay.com/app/Services/FeServices"
+put ProductService.php
+close
+exit

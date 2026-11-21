@@ -1,0 +1,32 @@
+# Vong 13+14 (02/11) — popup bao gia (PC) + nut "Mua them san pham khac" ve danh muc.
+# 9 file. Chay SAU winscp-backup-quote-cart.txt. KHONG dong .env.
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/app/Http/Requests"
+cd "/public_html/demo.sandienmay.com/app/Http/Requests"
+put "QuoteRequest.php"
+lcd "D:/laragon/www/sandienmay/app/Http/Controllers/Frontend"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Frontend"
+put "ContactController.php"
+put "CartController.php"
+lcd "D:/laragon/www/sandienmay/routes"
+cd "/public_html/demo.sandienmay.com/routes"
+put "frontend.php"
+lcd "D:/laragon/www/sandienmay/resources/views/web/product"
+cd "/public_html/demo.sandienmay.com/resources/views/web/product"
+put "_first-screen.blade.php"
+lcd "D:/laragon/www/sandienmay/resources/views/backend/customer"
+cd "/public_html/demo.sandienmay.com/resources/views/backend/customer"
+put "contact.blade.php"
+lcd "D:/laragon/www/sandienmay/resources/views/web/cart"
+cd "/public_html/demo.sandienmay.com/resources/views/web/cart"
+put "index.blade.php"
+lcd "D:/laragon/www/sandienmay/public/js-new/fe/pages"
+cd "/public_html/demo.sandienmay.com/public/js-new/fe/pages"
+put "product.min.js"
+lcd "D:/laragon/www/sandienmay/public/css-new/dist"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+put "product.min.css"
+exit

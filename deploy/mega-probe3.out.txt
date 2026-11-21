@@ -1,0 +1,341 @@
+viewport 1440x900
+
+== panel vua mo (chua hover) ==
+{
+  inner: {
+    t: 134,
+    b: 494,
+    h: 360,
+    w: 280,
+    mt: '0px',
+    pb: '0px',
+    maxH: 'none',
+    ov: 'hidden',
+    disp: 'flex',
+    trans: 'width 0.18s, height 0.18s'
+  },
+  rail: {
+    t: 135,
+    b: 493,
+    h: 358,
+    w: 278,
+    mt: '0px',
+    pb: '8px',
+    maxH: 'max-content',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  body: {
+    t: 0,
+    b: 0,
+    h: 0,
+    w: 0,
+    mt: '0px',
+    pb: '24px',
+    maxH: '780px',
+    ov: 'auto',
+    disp: 'none',
+    trans: 'all'
+  },
+  mega: {
+    t: 134,
+    b: 512,
+    h: 378,
+    w: 1433,
+    mt: '10px',
+    pb: '18px',
+    maxH: 'none',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  active: null,
+  railScrollH: 358,
+  railClientH: 358
+}
+
+== hover 1 Công cụ & dụng cụ -> so frame thay doi layout: 12 ==
+┌─────────┬─────┬─────┬──────┬─────┬─────┬─────────┐
+│ (index) │  t  │ ih  │  iw  │ rh  │ bh  │ bscroll │
+├─────────┼─────┼─────┼──────┼─────┼─────┼─────────┤
+│    0    │  0  │ 360 │ 280  │ 358 │ 358 │   358   │
+│    1    │  8  │ 360 │ 369  │ 358 │ 358 │   358   │
+│    2    │ 23  │ 359 │ 556  │ 357 │ 357 │   357   │
+│    3    │ 40  │ 359 │ 775  │ 357 │ 357 │   357   │
+│    4    │ 57  │ 359 │ 955  │ 357 │ 357 │   357   │
+│    5    │ 74  │ 358 │ 1087 │ 356 │ 356 │   356   │
+│    6    │ 91  │ 358 │ 1181 │ 356 │ 356 │   356   │
+│    7    │ 107 │ 358 │ 1247 │ 356 │ 356 │   356   │
+│    8    │ 124 │ 358 │ 1292 │ 356 │ 356 │   356   │
+│    9    │ 141 │ 358 │ 1320 │ 356 │ 356 │   356   │
+│   10    │ 157 │ 358 │ 1334 │ 356 │ 356 │   356   │
+│   11    │ 174 │ 358 │ 1337 │ 356 │ 356 │   356   │
+└─────────┴─────┴─────┴──────┴─────┴─────┴─────────┘
+{
+  inner: {
+    t: 134,
+    b: 492,
+    h: 358,
+    w: 1337,
+    mt: '0px',
+    pb: '0px',
+    maxH: 'none',
+    ov: 'hidden',
+    disp: 'flex',
+    trans: 'width 0.18s, height 0.18s'
+  },
+  rail: {
+    t: 135,
+    b: 491,
+    h: 356,
+    w: 278,
+    mt: '0px',
+    pb: '8px',
+    maxH: 'max-content',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  body: {
+    t: 135,
+    b: 491,
+    h: 356,
+    w: 1057,
+    mt: '0px',
+    pb: '24px',
+    maxH: '780px',
+    ov: 'auto',
+    disp: 'block',
+    trans: 'all'
+  },
+  mega: {
+    t: 134,
+    b: 510,
+    h: 376,
+    w: 1433,
+    mt: '10px',
+    pb: '18px',
+    maxH: 'none',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  active: { idx: '1', h: 219 },
+  railScrollH: 356,
+  railClientH: 356
+}
+
+== hover 0 Vệ sinh công nghiệp -> so frame thay doi layout: 11 ==
+┌─────────┬─────┬─────┬──────┬─────┬─────┬─────────┐
+│ (index) │  t  │ ih  │  iw  │ rh  │ bh  │ bscroll │
+├─────────┼─────┼─────┼──────┼─────┼─────┼─────────┤
+│    0    │  0  │ 358 │ 1337 │ 356 │ 356 │   448   │
+│    1    │  7  │ 366 │ 1337 │ 360 │ 364 │   448   │
+│    2    │ 24  │ 382 │ 1337 │ 360 │ 380 │   448   │
+│    3    │ 40  │ 400 │ 1337 │ 360 │ 398 │   448   │
+│    4    │ 57  │ 415 │ 1337 │ 360 │ 413 │   448   │
+│    5    │ 74  │ 427 │ 1337 │ 360 │ 425 │   448   │
+│    6    │ 91  │ 435 │ 1337 │ 360 │ 433 │   448   │
+│    7    │ 107 │ 440 │ 1337 │ 360 │ 438 │   448   │
+│    8    │ 124 │ 444 │ 1337 │ 360 │ 442 │   448   │
+│    9    │ 140 │ 447 │ 1337 │ 360 │ 445 │   448   │
+│   10    │ 157 │ 448 │ 1337 │ 360 │ 446 │   448   │
+└─────────┴─────┴─────┴──────┴─────┴─────┴─────────┘
+{
+  inner: {
+    t: 134,
+    b: 582,
+    h: 448,
+    w: 1337,
+    mt: '0px',
+    pb: '0px',
+    maxH: 'none',
+    ov: 'hidden',
+    disp: 'flex',
+    trans: 'width 0.18s, height 0.18s'
+  },
+  rail: {
+    t: 135,
+    b: 495,
+    h: 360,
+    w: 278,
+    mt: '0px',
+    pb: '8px',
+    maxH: 'max-content',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  body: {
+    t: 135,
+    b: 581,
+    h: 446,
+    w: 1057,
+    mt: '0px',
+    pb: '24px',
+    maxH: '780px',
+    ov: 'auto',
+    disp: 'block',
+    trans: 'all'
+  },
+  mega: {
+    t: 134,
+    b: 600,
+    h: 466,
+    w: 1433,
+    mt: '10px',
+    pb: '18px',
+    maxH: 'none',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  active: { idx: '0', h: 404 },
+  railScrollH: 360,
+  railClientH: 360
+}
+
+== hover 2 Thiết bị công nghiệp -> so frame thay doi layout: 11 ==
+┌─────────┬─────┬─────┬──────┬─────┬─────┬─────────┐
+│ (index) │  t  │ ih  │  iw  │ rh  │ bh  │ bscroll │
+├─────────┼─────┼─────┼──────┼─────┼─────┼─────────┤
+│    0    │  0  │ 448 │ 1337 │ 360 │ 446 │   446   │
+│    1    │  9  │ 441 │ 1337 │ 360 │ 439 │   439   │
+│    2    │ 27  │ 425 │ 1337 │ 360 │ 423 │   423   │
+│    3    │ 44  │ 407 │ 1337 │ 360 │ 405 │   405   │
+│    4    │ 59  │ 392 │ 1337 │ 360 │ 390 │   390   │
+│    5    │ 77  │ 381 │ 1337 │ 360 │ 379 │   379   │
+│    6    │ 93  │ 373 │ 1337 │ 360 │ 371 │   371   │
+│    7    │ 110 │ 367 │ 1337 │ 360 │ 365 │   365   │
+│    8    │ 127 │ 364 │ 1337 │ 360 │ 362 │   362   │
+│    9    │ 143 │ 361 │ 1337 │ 359 │ 359 │   359   │
+│   10    │ 160 │ 360 │ 1337 │ 358 │ 358 │   358   │
+└─────────┴─────┴─────┴──────┴─────┴─────┴─────────┘
+{
+  inner: {
+    t: 134,
+    b: 494,
+    h: 360,
+    w: 1337,
+    mt: '0px',
+    pb: '0px',
+    maxH: 'none',
+    ov: 'hidden',
+    disp: 'flex',
+    trans: 'width 0.18s, height 0.18s'
+  },
+  rail: {
+    t: 135,
+    b: 493,
+    h: 358,
+    w: 278,
+    mt: '0px',
+    pb: '8px',
+    maxH: 'max-content',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  body: {
+    t: 135,
+    b: 493,
+    h: 358,
+    w: 1057,
+    mt: '0px',
+    pb: '24px',
+    maxH: '780px',
+    ov: 'auto',
+    disp: 'block',
+    trans: 'all'
+  },
+  mega: {
+    t: 134,
+    b: 512,
+    h: 378,
+    w: 1433,
+    mt: '10px',
+    pb: '18px',
+    maxH: 'none',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  active: { idx: '2', h: 236 },
+  railScrollH: 358,
+  railClientH: 358
+}
+
+== hover 0 Vệ sinh công nghiệp -> so frame thay doi layout: 11 ==
+┌─────────┬─────┬─────┬──────┬─────┬─────┬─────────┐
+│ (index) │  t  │ ih  │  iw  │ rh  │ bh  │ bscroll │
+├─────────┼─────┼─────┼──────┼─────┼─────┼─────────┤
+│    0    │  0  │ 360 │ 1337 │ 358 │ 358 │   448   │
+│    1    │  6  │ 367 │ 1337 │ 360 │ 365 │   448   │
+│    2    │ 23  │ 383 │ 1337 │ 360 │ 381 │   448   │
+│    3    │ 39  │ 401 │ 1337 │ 360 │ 399 │   448   │
+│    4    │ 55  │ 416 │ 1337 │ 360 │ 414 │   448   │
+│    5    │ 73  │ 427 │ 1337 │ 360 │ 425 │   448   │
+│    6    │ 89  │ 435 │ 1337 │ 360 │ 433 │   448   │
+│    7    │ 106 │ 441 │ 1337 │ 360 │ 439 │   448   │
+│    8    │ 122 │ 444 │ 1337 │ 360 │ 442 │   448   │
+│    9    │ 138 │ 447 │ 1337 │ 360 │ 445 │   448   │
+│   10    │ 156 │ 448 │ 1337 │ 360 │ 446 │   448   │
+└─────────┴─────┴─────┴──────┴─────┴─────┴─────────┘
+{
+  inner: {
+    t: 134,
+    b: 582,
+    h: 448,
+    w: 1337,
+    mt: '0px',
+    pb: '0px',
+    maxH: 'none',
+    ov: 'hidden',
+    disp: 'flex',
+    trans: 'width 0.18s, height 0.18s'
+  },
+  rail: {
+    t: 135,
+    b: 495,
+    h: 360,
+    w: 278,
+    mt: '0px',
+    pb: '8px',
+    maxH: 'max-content',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  body: {
+    t: 135,
+    b: 581,
+    h: 446,
+    w: 1057,
+    mt: '0px',
+    pb: '24px',
+    maxH: '780px',
+    ov: 'auto',
+    disp: 'block',
+    trans: 'all'
+  },
+  mega: {
+    t: 134,
+    b: 600,
+    h: 466,
+    w: 1433,
+    mt: '10px',
+    pb: '18px',
+    maxH: 'none',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  active: { idx: '0', h: 404 },
+  railScrollH: 360,
+  railClientH: 360
+}
+shot -> deploy/mega-shot.png
+
+inner css: {"width":"1337.34px","height":"448px","transition":"width 0.18s, height 0.18s","overflow":"hidden","alignItems":"stretch"}
+rail css: {"maxHeight":"max-content","height":"360px","flex":"0 0 278px","overflowY":"visible","transition":"all","padding":"8px 0px"}

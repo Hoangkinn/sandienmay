@@ -1,0 +1,300 @@
+viewport 1440x900
+
+== panel vua mo (chua hover) ==
+{
+  inner: {
+    t: 134,
+    b: 150,
+    h: 16,
+    w: 280,
+    mt: '0px',
+    pb: '0px',
+    maxH: 'none',
+    ov: 'hidden',
+    disp: 'flex',
+    trans: 'width 0.18s, height 0.18s'
+  },
+  rail: {
+    t: 135,
+    b: 151,
+    h: 16,
+    w: 278,
+    mt: '0px',
+    pb: '8px',
+    maxH: 'max-content',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  body: {
+    t: 0,
+    b: 0,
+    h: 0,
+    w: 0,
+    mt: '0px',
+    pb: '24px',
+    maxH: '780px',
+    ov: 'auto',
+    disp: 'none',
+    trans: 'all'
+  },
+  mega: {
+    t: 134,
+    b: 168,
+    h: 34,
+    w: 1433,
+    mt: '10px',
+    pb: '18px',
+    maxH: 'none',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  active: null,
+  railScrollH: 352,
+  railClientH: 16
+}
+
+== hover 1 Công cụ & dụng cụ -> so frame thay doi layout: 1 ==
+┌─────────┬───┬────┬─────┬────┬────┬─────────┐
+│ (index) │ t │ ih │ iw  │ rh │ bh │ bscroll │
+├─────────┼───┼────┼─────┼────┼────┼─────────┤
+│    0    │ 0 │ 16 │ 280 │ 16 │ 0  │    0    │
+└─────────┴───┴────┴─────┴────┴────┴─────────┘
+{
+  inner: {
+    t: 134,
+    b: 150,
+    h: 16,
+    w: 280,
+    mt: '0px',
+    pb: '0px',
+    maxH: 'none',
+    ov: 'hidden',
+    disp: 'flex',
+    trans: 'width 0.18s, height 0.18s'
+  },
+  rail: {
+    t: 135,
+    b: 151,
+    h: 16,
+    w: 278,
+    mt: '0px',
+    pb: '8px',
+    maxH: 'max-content',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  body: {
+    t: 0,
+    b: 0,
+    h: 0,
+    w: 0,
+    mt: '0px',
+    pb: '24px',
+    maxH: '780px',
+    ov: 'auto',
+    disp: 'none',
+    trans: 'all'
+  },
+  mega: {
+    t: 134,
+    b: 168,
+    h: 34,
+    w: 1433,
+    mt: '10px',
+    pb: '18px',
+    maxH: 'none',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  active: null,
+  railScrollH: 352,
+  railClientH: 16
+}
+
+== hover 0 Vệ sinh công nghiệp -> so frame thay doi layout: 1 ==
+┌─────────┬───┬────┬─────┬────┬────┬─────────┐
+│ (index) │ t │ ih │ iw  │ rh │ bh │ bscroll │
+├─────────┼───┼────┼─────┼────┼────┼─────────┤
+│    0    │ 0 │ 16 │ 280 │ 16 │ 0  │    0    │
+└─────────┴───┴────┴─────┴────┴────┴─────────┘
+{
+  inner: {
+    t: 134,
+    b: 150,
+    h: 16,
+    w: 280,
+    mt: '0px',
+    pb: '0px',
+    maxH: 'none',
+    ov: 'hidden',
+    disp: 'flex',
+    trans: 'width 0.18s, height 0.18s'
+  },
+  rail: {
+    t: 135,
+    b: 151,
+    h: 16,
+    w: 278,
+    mt: '0px',
+    pb: '8px',
+    maxH: 'max-content',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  body: {
+    t: 0,
+    b: 0,
+    h: 0,
+    w: 0,
+    mt: '0px',
+    pb: '24px',
+    maxH: '780px',
+    ov: 'auto',
+    disp: 'none',
+    trans: 'all'
+  },
+  mega: {
+    t: 134,
+    b: 168,
+    h: 34,
+    w: 1433,
+    mt: '10px',
+    pb: '18px',
+    maxH: 'none',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  active: null,
+  railScrollH: 352,
+  railClientH: 16
+}
+
+== hover 2 Thiết bị công nghiệp -> so frame thay doi layout: 1 ==
+┌─────────┬───┬────┬─────┬────┬────┬─────────┐
+│ (index) │ t │ ih │ iw  │ rh │ bh │ bscroll │
+├─────────┼───┼────┼─────┼────┼────┼─────────┤
+│    0    │ 0 │ 16 │ 280 │ 16 │ 0  │    0    │
+└─────────┴───┴────┴─────┴────┴────┴─────────┘
+{
+  inner: {
+    t: 134,
+    b: 150,
+    h: 16,
+    w: 280,
+    mt: '0px',
+    pb: '0px',
+    maxH: 'none',
+    ov: 'hidden',
+    disp: 'flex',
+    trans: 'width 0.18s, height 0.18s'
+  },
+  rail: {
+    t: 135,
+    b: 151,
+    h: 16,
+    w: 278,
+    mt: '0px',
+    pb: '8px',
+    maxH: 'max-content',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  body: {
+    t: 0,
+    b: 0,
+    h: 0,
+    w: 0,
+    mt: '0px',
+    pb: '24px',
+    maxH: '780px',
+    ov: 'auto',
+    disp: 'none',
+    trans: 'all'
+  },
+  mega: {
+    t: 134,
+    b: 168,
+    h: 34,
+    w: 1433,
+    mt: '10px',
+    pb: '18px',
+    maxH: 'none',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  active: null,
+  railScrollH: 352,
+  railClientH: 16
+}
+
+== hover 0 Vệ sinh công nghiệp -> so frame thay doi layout: 1 ==
+┌─────────┬───┬────┬─────┬────┬────┬─────────┐
+│ (index) │ t │ ih │ iw  │ rh │ bh │ bscroll │
+├─────────┼───┼────┼─────┼────┼────┼─────────┤
+│    0    │ 0 │ 16 │ 280 │ 16 │ 0  │    0    │
+└─────────┴───┴────┴─────┴────┴────┴─────────┘
+{
+  inner: {
+    t: 134,
+    b: 150,
+    h: 16,
+    w: 280,
+    mt: '0px',
+    pb: '0px',
+    maxH: 'none',
+    ov: 'hidden',
+    disp: 'flex',
+    trans: 'width 0.18s, height 0.18s'
+  },
+  rail: {
+    t: 135,
+    b: 151,
+    h: 16,
+    w: 278,
+    mt: '0px',
+    pb: '8px',
+    maxH: 'max-content',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  body: {
+    t: 0,
+    b: 0,
+    h: 0,
+    w: 0,
+    mt: '0px',
+    pb: '24px',
+    maxH: '780px',
+    ov: 'auto',
+    disp: 'none',
+    trans: 'all'
+  },
+  mega: {
+    t: 134,
+    b: 168,
+    h: 34,
+    w: 1433,
+    mt: '10px',
+    pb: '18px',
+    maxH: 'none',
+    ov: 'visible',
+    disp: 'block',
+    trans: 'all'
+  },
+  active: null,
+  railScrollH: 352,
+  railClientH: 16
+}
+shot -> deploy/mega-shot.png
+
+inner css: {"width":"280px","height":"16px","transition":"width 0.18s, height 0.18s","overflow":"hidden","alignItems":"stretch"}
+rail css: {"maxHeight":"max-content","height":"16px","flex":"0 0 278px","overflowY":"visible","transition":"all","padding":"8px 0px"}

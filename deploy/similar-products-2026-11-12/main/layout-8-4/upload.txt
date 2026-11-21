@@ -1,0 +1,10 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/resources/views/web/product"
+cd "/public_html/sandienmay.com/resources/views/web/product"
+put -nopreservetime "detail.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/similar-products-2026-11-12/main/layout-8-4/verify"
+get "detail.blade.php"
+exit

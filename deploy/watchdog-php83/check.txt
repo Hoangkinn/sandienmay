@@ -1,0 +1,8 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/watchdog-php83"
+cd "/public_html/sandienmay.com"
+get ".htaccess" "htaccess-now"
+exit

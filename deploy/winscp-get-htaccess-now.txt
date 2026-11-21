@@ -1,0 +1,9 @@
+# Lay .htaccess hien tai tren demo ve doi chieu voi local
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/image-batch"
+cd "/public_html/demo.sandienmay.com/public"
+get ".htaccess" "host-public-htaccess-now.txt"
+exit

@@ -1,0 +1,13 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/deploy/host-check"
+cd   "/public_html/sandienmay.com/routes"
+get  "backend.php"
+
+cd   "/public_html/sandienmay.com/bootstrap/cache"
+ls
+
+exit

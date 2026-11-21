@@ -1,0 +1,33 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/app/Http/Controllers/Backend"
+cd   "/public_html/sandienmay.com/app/Http/Controllers/Backend"
+put  "VideoController.php"
+
+lcd "D:/laragon/www/sandienmay/public/css-new/src"
+cd   "/public_html/sandienmay.com/public/css-new/src"
+put  "home-v2.css"
+
+lcd "D:/laragon/www/sandienmay/public/css-new/dist"
+cd   "/public_html/sandienmay.com/public/css-new/dist"
+put  "home-v2.min.css"
+
+lcd "D:/laragon/www/sandienmay/resources/views/web/home"
+cd   "/public_html/sandienmay.com/resources/views/web/home"
+put  "index.blade.php"
+
+echo "===== verify: lay file ve de so md5 ====="
+lcd "D:/laragon/www/sandienmay/deploy/verify-host-2026-11-06-prod"
+cd "/public_html/sandienmay.com/app/Http/Controllers/Backend"
+get  "VideoController.php"
+cd "/public_html/sandienmay.com/public/css-new/src"
+get  "home-v2.css"
+cd "/public_html/sandienmay.com/public/css-new/dist"
+get  "home-v2.min.css"
+cd "/public_html/sandienmay.com/resources/views/web/home"
+get  "index.blade.php"
+
+exit

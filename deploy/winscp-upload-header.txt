@@ -1,0 +1,12 @@
+# Vong 10 (02/11) — header mobile sticky, 2 file CSS. Chay SAU winscp-backup-header.txt.
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/public/css-new/dist"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+put "layout.min.css"
+lcd "D:/laragon/www/sandienmay/public/css-new/src"
+cd "/public_html/demo.sandienmay.com/public/css-new/src"
+put "layout.css"
+exit

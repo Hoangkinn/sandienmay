@@ -1,0 +1,12 @@
+# Vong 11 (02/11) — sitemap.xml: backup 2 file bi ghi de
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-02/sitemap-controller"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Frontend"
+get "SitemapController.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-02/sitemap-view"
+cd "/public_html/demo.sandienmay.com/resources/views"
+get "sitemap.blade.php"
+exit

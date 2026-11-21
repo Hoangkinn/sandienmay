@@ -1,0 +1,7 @@
+option batch abort
+option confirm off
+option transfer binary
+open "ynlbdgfvhosting@103.75.185.69"
+synchronize local "D:\laragon\www\sandienmay\deploy\probe-2026-11-19\cache-data" "/public_html/sandienmay.com/storage/framework/cache/data"
+close
+exit

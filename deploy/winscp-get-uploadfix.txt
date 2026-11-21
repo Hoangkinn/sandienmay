@@ -1,0 +1,13 @@
+# Lay ban hoi tren demo cua 4 file upload fix (Attribute/Review/SettingField/Helper) de diff truoc khi de
+option batch continue
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-05/upload-fix-get"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+get "AttributeController.php" "host-AttributeController.php"
+get "ReviewController.php" "host-ReviewController.php"
+get "SettingFieldController.php" "host-SettingFieldController.php"
+cd "/public_html/demo.sandienmay.com/app/Helpers"
+get "UploadImageHelper.php" "host-UploadImageHelper.php"
+exit

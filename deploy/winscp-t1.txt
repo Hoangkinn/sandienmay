@@ -1,0 +1,6 @@
+option batch abort
+option confirm off
+lcd "D:/laragon/www/sandienmay"
+lpwd
+pwd
+exit

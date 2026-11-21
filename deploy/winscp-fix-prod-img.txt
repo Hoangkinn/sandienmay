@@ -1,0 +1,17 @@
+# Xoa cay duong dan do toi (public/storage/storage) roi dua lai dung cho
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+rmdir "/public_html/sandienmay.com/public/storage/storage"
+lcd "D:/laragon/www/sandienmay/deploy/fix-prod-img"
+cd   "/public_html/sandienmay.com/public"
+put  "*"
+echo "===== kiem tra lai ====="
+cd "/public_html/sandienmay.com/public/storage"
+ls "*.webp"
+ls "*-1793256*.png"
+cd "/public_html/sandienmay.com/public/storage/photos/39"
+ls "*sp.jpg"
+ls "*demo-sp-2*"
+exit

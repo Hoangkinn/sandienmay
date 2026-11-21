@@ -1,0 +1,18 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/mobile-catblock-prod/views-web-home"
+cd   "/public_html/sandienmay.com/resources/views/web/home"
+get  "index.blade.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/mobile-catblock-prod/css-src"
+cd   "/public_html/sandienmay.com/public/css-new/src"
+get  "home-v2.css"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-06/mobile-catblock-prod/css-dist"
+cd   "/public_html/sandienmay.com/public/css-new/dist"
+get  "home-v2.min.css"
+
+exit

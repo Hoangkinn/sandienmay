@@ -1,0 +1,10 @@
+# Vong 15 (03/11) — backup ban cu New_ProductController.php tren demo TRUOC khi de.
+# Duong dan FTP tinh tu home = /public_html/... (KHONG phai /home/ynlbdgfvhosting/...)
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-02/seo-product/controllers"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Frontend"
+get "New_ProductController.php"
+exit

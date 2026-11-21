@@ -1,0 +1,39 @@
+# Vyng PageSpeed 6 (30/10): defer main.min.js + bo doc layout luc load + nut -/+ gio hang
+# Chay: MSYS2_ARG_CONV_EXCL='*' "/c/Program Files (x86)/WinSCP/WinSCP.com" "/script=D:/laragon/www/sandienmay/deploy/winscp-upload-c.txt"
+# KHONG sync .env. Chay winscp-backup-c.txt truoc de lay ban host ve lam rollback.
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/public/js-new/fe"
+cd "/public_html/demo.sandienmay.com/public/js-new/fe"
+put "main.min.js"
+
+lcd "D:/laragon/www/sandienmay/resources/views/web"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+put "layout.blade.php"
+
+lcd "D:/laragon/www/sandienmay/resources/views/web/home"
+cd "/public_html/demo.sandienmay.com/resources/views/web/home"
+put "index.blade.php"
+
+lcd "D:/laragon/www/sandienmay/resources/views/web/product"
+cd "/public_html/demo.sandienmay.com/resources/views/web/product"
+put "detail.blade.php"
+put "index.blade.php"
+put "_first-screen.blade.php"
+
+lcd "D:/laragon/www/sandienmay/resources/views/web/page"
+cd "/public_html/demo.sandienmay.com/resources/views/web/page"
+put "search.blade.php"
+
+lcd "D:/laragon/www/sandienmay/resources/views/components/fe"
+cd "/public_html/demo.sandienmay.com/resources/views/components/fe"
+put "products.blade.php"
+
+lcd "D:/laragon/www/sandienmay/resources/views/web/cart"
+cd "/public_html/demo.sandienmay.com/resources/views/web/cart"
+put "index.blade.php"
+
+exit

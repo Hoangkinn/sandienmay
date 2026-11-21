@@ -1,0 +1,10 @@
+# Dua file chan muon len site chinh (chi doc, se xoa sau khi chay)
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy"
+cd   "/public_html/sandienmay.com/public"
+put  "zz-diag.php"
+ls "*zz-diag.php"
+exit

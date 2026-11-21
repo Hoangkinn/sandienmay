@@ -1,0 +1,15 @@
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/verify-b"
+cd "/public_html/demo.sandienmay.com/public/images"
+get "flash-sale.webp"
+get "flash-sale-m.webp"
+get "back-bao.webp"
+get "back-bao-m.webp"
+cd "/public_html/demo.sandienmay.com/resources/views/web/home"
+get "index.blade.php"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+get "home-v2.min.css"
+exit

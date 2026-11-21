@@ -1,0 +1,21 @@
+# Vong lien he noi (03/11) — lay lai 5 file sau khi upload de doi md5
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/verify-lienhe/web"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+get "layout.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/verify-lienhe/css-src"
+cd "/public_html/demo.sandienmay.com/public/css-new/src"
+get "layout.css"
+lcd "D:/laragon/www/sandienmay/deploy/verify-lienhe/css-dist"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+get "layout.min.css"
+lcd "D:/laragon/www/sandienmay/deploy/verify-lienhe/js"
+cd "/public_html/demo.sandienmay.com/public/js-new/fe"
+get "main.js"
+lcd "D:/laragon/www/sandienmay/deploy/verify-lienhe/js"
+cd "/public_html/demo.sandienmay.com/public/js-new/fe"
+get "main.min.js"
+exit

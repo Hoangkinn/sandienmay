@@ -1,0 +1,11 @@
+# Vong 11 (02/11) — lay nguoc 2 file sau khi upload de doi md5 voi local
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/verify-sitemap"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Frontend"
+get "SitemapController.php"
+cd "/public_html/demo.sandienmay.com/resources/views"
+get "sitemap.blade.php"
+exit

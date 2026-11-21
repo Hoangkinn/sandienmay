@@ -1,0 +1,13 @@
+# Liet ke toan bo /public_html + thung rac dau sau backup (tim ban cu con lai)
+option batch abort
+option confirm off
+open ynlbdgfvhosting@103.75.185.69
+echo "@@@PUBLIC_HTML"
+ls "/public_html"
+echo "@@@ROOT_HOMING"
+cd "/public_html/sandienmay.com"
+ls
+echo "@@@DEMO_ROOT"
+cd "/public_html/demo.sandienmay.com"
+ls
+exit

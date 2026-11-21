@@ -1,0 +1,147 @@
+1795061037a:41:{s:15:"giay_chung_nhan";a:4:{s:3:"key";s:15:"giay_chung_nhan";s:5:"value";s:48:"Copyright 2023 © ynlbdgfvhosting_sandienmay.com";s:4:"name";s:21:"Giấy chứng nhận";s:4:"type";s:4:"text";}s:17:"ho_tro_khach_hang";a:4:{s:3:"key";s:17:"ho_tro_khach_hang";s:5:"value";s:1159:"<p class="footer-title fs-16 fw-7">HỖ TRỢ KHÁCH HÀNG</p>
+<div class="footer-sub footer-menu">
+    <ul>
+        <li class="menu-item ">
+            <a href="/huong-dan-mua-hang" rel="follow">Hướng dẫn mua hàng</a>
+        </li>
+        <li class="menu-item ">
+            <a href="/huong-dan-thanh-toan" rel="follow">Hướng dẫn thanh toán</a>
+        </li>
+        <li class="menu-item ">
+            <a href="/chinh-sach-van-chuyen" rel="follow">Chính sách vận chuyển</a>
+        </li>
+        <li class="menu-item ">
+            <a href="/chinh-sach-bao-mat-thong-tin" rel="follow">Chính sách bảo mật thông tin</a>
+        </li>
+        <li class="menu-item ">
+            <a href="/chinh-sach-bao-hanh-doi-tra" rel="follow">Chính sách bảo hành - đổi trả</a>
+        </li>
+        <li class="menu-item ">
+            <a href="/chinh-sach-hoan-tien-va-tra-lai-tien" rel="follow">Chính sách hoàn tiền và trả lại tiền</a>
+        </li>
+        <li class="menu-item ">
+            <a href="/thac-mac-khieu-nai" rel="follow">Thắc mắc khiếu nại</a>
+        </li>
+    </ul>
+</div>";s:4:"name";s:23:"Hỗ trợ khách hàng";s:4:"type";s:8:"textarea";}s:21:"ket_noi_voi_chung_toi";a:4:{s:3:"key";s:21:"ket_noi_voi_chung_toi";s:5:"value";s:969:"<p class="footer-title fs-16 fw-7">KẾT NỐI VỚI CHÚNG TÔI</p>
+<div class="footer-sub social d-flex gap-3">
+    <a class="social-facebook" href="https://www.facebook.com/kumisaivietnam" target="_blank" title="Facebook"
+       rel="nofollow"><i class="fab fa-facebook-f icon-facebook fs-40"></i></a>
+    <a class="social-google" href="https://www.youtube.com/@KumisaiVietNam/videos" target="_blank" title="Youtube"
+       rel="nofollow"><i class="fab fa-youtube icon-youtube fs-40"></i></a>
+    <a class="social-tiktok" href="https://www.tiktok.com/@review_maycongnghiep" target="_blank" title="Tiktok"
+       rel="nofollow">
+        <i class="icon-tiktok fs-40"></i>
+        <img src="/img/icons/tiktok.svg" width="18" height18="">
+    </a>
+    <a href="http://online.gov.vn/Home/WebDetails/104516" rel="nofollow" target="_blank"><img
+            src="http://kumisai.vn/img/dathongbao.png" alt="Đã thông báo với bộ công thương"></a>
+</div>";s:4:"name";s:29:"Kết nối với chúng tôi";s:4:"type";s:8:"textarea";}s:7:"hotline";a:4:{s:3:"key";s:7:"hotline";s:5:"value";s:482:"<p class="header-address">
+	<span>Số 2 Lê Đức Thọ, Phường Mai Dịch, Hà Nội</span>
+	<a  href="tel:0982090819" rel="nofollow"><font>0982 090 819</font></a>
+</p>
+<p class="header-address">
+	<span>Số 6 kênh 19/5, Phường Tân Sơn Nhì, TP. HCM</span>
+	<a  href="tel:0983898758" rel="nofollow"><font>0983 898 758</font></a>
+</p>
+<p class="header-hotline">
+	<span>Hotline</span>
+	<a  href="tel:0982090819" rel="nofollow"><font>0982 090 819</font></a>
+</p>";s:4:"name";s:7:"Hotline";s:4:"type";s:8:"textarea";}s:17:"danh_muc_san_pham";a:4:{s:3:"key";s:17:"danh_muc_san_pham";s:5:"value";s:1086:"<p class="footer-title fs-16 fw-7">DANH MỤC SẢN PHẨM</p>
+<div class="footer-sub footer-menu">
+	<ul>
+		<li class="menu-item ">
+			<a href="/may-hut-bui-kumisai" rel="follow">Máy hút bụi Kumisai</a>
+		</li>
+		<li class="menu-item ">
+			<a href="/may-hut-bui-dqc-tech" rel="follow">Máy hút bụi DQC - Tech</a>
+		</li>
+		<li class="menu-item ">
+			<a href="/may-cha-san-kumisai" rel="follow">Máy chà sàn Kumisai</a>
+		</li>
+		</li>
+		<li class="menu-item ">
+			<a href="/may-cha-san-dqc-tech" rel="follow">Máy chà sàn DQC - Tech</a>
+		</li>
+		<li class="menu-item ">
+			<a href="/xe-quet-rac-kumisai" rel="follow">Xe quét rác Kumisai</a>
+		</li>
+                <li class="menu-item ">
+			<a href="/xe-quet-rac-dqc-tech" rel="follow">Xe quét rác DQC - Tech</a>
+		</li>
+                <li class="menu-item ">
+			<a href="/may-rua-xe-kumisai" rel="follow">Máy rửa xe Kumisai</a>
+		</li>
+                <li class="menu-item ">
+			<a href="/may-rua-xe-dqc-tech" rel="follow">Máy rửa xe DQC - Tech</a>
+		</li>            
+	</ul>
+</div>";s:4:"name";s:32:"Danh mục sản phẩm (Footer)";s:4:"type";s:8:"textarea";}s:6:"slogan";a:4:{s:3:"key";s:6:"slogan";s:5:"value";s:80:"DQC Tech cung cấp các loại máy công nghiệp chính hãng chất lượng";s:4:"name";s:15:"Slogan (Header)";s:4:"type";s:4:"text";}s:4:"logo";a:4:{s:3:"key";s:4:"logo";s:5:"value";s:14:"1675484382.png";s:4:"name";s:4:"Logo";s:4:"type";s:5:"image";}s:14:"lien_he_mobile";a:4:{s:3:"key";s:14:"lien_he_mobile";s:5:"value";s:307:"<div class="btn-bottom">
+    <a class="btn-zalo" href="https://zalo.me/0982090819" target="_blank" rel="nofollow"></a>
+    <a class="btn-messenger" href="https://www.facebook.com/kumisaivietnam" target="_blank" rel="nofollow"></a>
+    <a class="btn-call" href="tel:0982090819" rel="nofollow"></a>
+</div>";s:4:"name";s:10:"Liên hệ";s:4:"type";s:8:"textarea";}s:7:"favicon";a:4:{s:3:"key";s:7:"favicon";s:5:"value";s:14:"1792808465.png";s:4:"name";s:7:"Favicon";s:4:"type";s:5:"image";}s:15:"product_contact";a:4:{s:3:"key";s:15:"product_contact";s:5:"value";s:1377:"<div class="product-hotline">
+	<div class="product-hotline-item">
+		<p class="product-info-title">Hotline Hà Nội</p>
+		<p class="product-hotline-list"><a href="tel:0982090819" rel="nofollow">0982 090 819</a> | <a href="tel:0983898758" rel="nofollow">0983 898 758</a></p>
+	</div>
+	<div class="product-hotline-item">
+		<p class="product-info-title">Hotline TPHCM</p>
+		<p class="product-ky-thuat-list"><a href="tel:0983898758" rel="nofollow">0983 898 758</a> | <a href="tel:0982090819" rel="nofollow">0982 090 819</a></p>
+	</div>
+</div>
+<div class="product-address">
+	<p class="product-info-title">Văn phòng giao dịch</p>
+	<p class="header-address">
+		<span style="color: #007fc0;"><i class="fa fa-home"></i> Hà Nội:</span> Số 2 Lê Đức Thọ, Mai Dịch, Cầu Giấy, Hà Nội
+	</p>
+	<p class="worktime-hd">
+		<span style="color: #007fc0;"><i class="fa fa-clock"></i>Thời gian:</span> Từ 8h - 19h thứ 2 đến thứ 6. T7 và CN từ 8h - 17h00
+	</p>
+        <br>
+	<p class="header-address">
+		<span style="color: #007fc0;"><i class="fa fa-home"></i> TP.HCM:</span> Số 6, kênh 19/5, Phường Sơn Kỳ, Quận Tân Phú, TP. Hồ Chí Minh
+	</p>
+	<p class="worktime-hd">
+		<span style="color: #007fc0;"><i class="fa fa-clock"></i>Thời gian:</span> Từ 8h - 19h thứ 2 đến thứ 6. T7 và CN từ 8h - 17h00
+	</p>
+</div>";s:4:"name";s:36:"Liên hệ (Sản phẩm chi tiết)";s:4:"type";s:8:"textarea";}s:16:"customize_header";a:4:{s:3:"key";s:16:"customize_header";s:5:"value";s:391:"<meta name="google-site-verification" content="0UbUvnp_fzHXKS1sPol0oJ5FC2yK_EX5msaX7tdY2RI" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M9TK3S41NQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M9TK3S41NQ');
+</script>";s:4:"name";s:38:"Tùy chỉnh css/js (Vị trí header)";s:4:"type";s:8:"textarea";}s:13:"ho_tro_online";a:4:{s:3:"key";s:13:"ho_tro_online";s:5:"value";s:1540:"<div class="info-footer-web-wrapper">
+    <div id="scrollUp">
+        <i class="fa fa-angle-double-up"></i>
+    </div>
+    <section class="info-footer-web show-on-desktop custom-toggle">
+        <p class="title-info-footer-web toggle-click icon-angle-down">Hỗ trợ online 8:00 - 18:00 | Đặt hàng online 24/24 <i class="fa fa-angle-up"></i></p>
+        <div class="toggle-show" style="display: block">
+            <div class="content-info-footer-web">
+                <p class="content-info-footer-web-top">Hỗ trợ nhanh 24/24: <a href="tel:0982090819" rel="nofollow">0982 090 819</a></p>
+                <div class="content-info-footer-web-image">
+                    <img src="/img/phone.svg" alt="phone.svg" loading="lazy" class="footer-web-phone" width="25" height="25">
+                    <img src="/img/gmail.svg" alt="gmail.svg" loading="lazy" class="footer-web-gmail" width="25" height="25">
+                </div>
+                <div class="content-info-footer-web-detail">
+                    <p><span>TP.HN: </span><a href="tel:0982090819" rel="nofollow">0982 090 819</a> - <a href="tel:0987661782" rel="nofollow">0987 661 782</a></p>   
+                    <p><span>TP.HCM: </span><a href="tel:0983898758" rel="nofollow">0983 898 758</a> - <a href="tel:0912370282" rel="nofollow">0912 370 282</a></p>
+                    <p><span>Email: </span><a href="mailto:admin@kumisai.vn" rel="nofollow">admin@kumisai.vn</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>";s:4:"name";s:17:"Hỗ trợ online";s:4:"type";s:8:"textarea";}s:8:"footer_1";a:4:{s:3:"key";s:8:"footer_1";s:5:"value";s:375:"<div class="fs-14 fw-7">Công ty cổ phần XNK tập đoàn Đặng Gia</div>
+<div>Mã số thuế: 0109086333 Do Sở Kế Hoạch Đầu tư TP Hà Nội cấp ngày 12/02/2020</div>
+<div>Địa chỉ: 124 Trịnh Văn Bô, Phường Xuân Phương, Quận Nam Từ Liêm, TP Hà Nội</div>
+<div>Đại diện pháp luật: Ông Đặng Văn Sơn - Giám đốc</div>";s:4:"name";s:8:"footer 1";s:4:"type";s:8:"textarea";}s:8:"footer_2";a:4:{s:3:"key";s:8:"footer_2";s:5:"value";s:280:"<div class="fs-14 fw-7">VĂN PHÒNG GIAO DỊCH TẠI HÀ NỘI</div>
+<div>Địa chỉ: Số 2 Lê Đức Thọ, Mai Dịch, Cầu Giấy, Hà Nội </div>
+<div>Số điện thoại: 0982 090 819 - 0983 898 758</div>
+<div>Email: ynlbdgfvhosting_sandienmay.com@gmail.com </div>";s:4:"name";s:8:"footer 2";s:4:"type";s:8:"textarea";}s:8:"footer_3";a:4:{s:3:"key";s:8:"footer_3";s:5:"value";s:294:"<div class="fs-14 fw-7">VĂN PHÒNG GIAO DỊCH TẠI TP. HCM</div>
+<div>Địa chỉ: Số 6, kênh 19/5, Phường Sơn Kỳ, Quận Tân Phú, TP. Hồ Chí Minh</div>
+<div>Số điện thoại: 0983 898 758 - 0982 090 819</div>
+<div>Email: ynlbdgfvhosting_sandienmay.com@gmail.com </div>";s:4:"name";s:8:"footer 3";s:4:"type";s:8:"textarea";}s:12:"new_phone_hn";a:4:{s:3:"key";s:12:"new_phone_hn";s:5:"value";s:12:"0967 998 982";s:4:"name";s:30:"Số điện thoại Hà Nội";s:4:"type";s:4:"text";}s:8:"new_mail";a:4:{s:3:"key";s:8:"new_mail";s:5:"value";s:40:"ynlbdgfvhosting_sandienmay.com@gmail.com";s:4:"name";s:4:"Mail";s:4:"type";s:4:"text";}s:10:"address_hn";a:4:{s:3:"key";s:10:"address_hn";s:5:"value";s:56:"Số 2 Lê Đức Thọ, Phường Mai Dịch, Hà Nội";s:4:"name";s:34:"Địa chỉ văn phòng Hà Nội";s:4:"type";s:4:"text";}s:11:"address_hcm";a:4:{s:3:"key";s:11:"address_hcm";s:5:"value";s:52:"Số 6 kênh 19/5, Phường Tân Sơn Nhì, TP. HCM";s:4:"name";s:39:"Địa chỉ văn phòng Hồ Chí Minh";s:4:"type";s:4:"text";}s:7:"link-fb";a:4:{s:3:"key";s:7:"link-fb";s:5:"value";s:42:"https://web.facebook.com/trungtammuasam.vn";s:4:"name";s:13:"Link Facebook";s:4:"type";s:4:"text";}s:9:"link-zalo";a:4:{s:3:"key";s:9:"link-zalo";s:5:"value";s:26:"https://zalo.me/0967998982";s:4:"name";s:9:"Link Zalo";s:4:"type";s:4:"text";}s:12:"link-youtube";a:4:{s:3:"key";s:12:"link-youtube";s:5:"value";s:46:"https://www.youtube.com/@KumisaiVietNam/videos";s:4:"name";s:12:"Link Youtube";s:4:"type";s:4:"text";}s:11:"link-tiktok";a:4:{s:3:"key";s:11:"link-tiktok";s:5:"value";s:44:"https://www.tiktok.com/@review_maycongnghiep";s:4:"name";s:11:"Link Tiktok";s:4:"type";s:4:"text";}s:19:"link-bo-cong-thuong";a:4:{s:3:"key";s:19:"link-bo-cong-thuong";s:5:"value";s:43:"http://online.gov.vn/Home/WebDetails/138734";s:4:"name";s:24:"Link Bộ Công Thương";s:4:"type";s:4:"text";}s:9:"site_name";a:4:{s:3:"key";s:9:"site_name";s:5:"value";s:18:"Kumisai Việt Nam";s:4:"name";s:12:"Tên website";s:4:"type";s:4:"text";}s:10:"site_title";a:4:{s:3:"key";s:10:"site_title";s:5:"value";s:92:"Kumisai Việt Nam - Cung Cấp Các Loại Máy Công Nghiệp Chính Hãng Chất Lượng";s:4:"name";s:24:"Thẻ meta title website";s:4:"type";s:4:"text";}s:13:"site_keywords";a:4:{s:3:"key";s:13:"site_keywords";s:5:"value";s:18:"Kumisai Việt Nam";s:4:"name";s:19:"Keyword cho website";s:4:"type";s:4:"text";}s:16:"site_description";a:4:{s:3:"key";s:16:"site_description";s:5:"value";s:194:"Kumisai Việt Nam - Cung cấp các loại máy công nghiệp chính hãng với các thương hiệu như Kumisai, Palada, Lutina, V-jet... phù hợp với mọi nhu cầu của quý khách.";s:4:"name";s:19:"Meta Decription Web";s:4:"type";s:4:"text";}s:13:"quick_support";a:4:{s:3:"key";s:13:"quick_support";s:5:"value";s:10:"0967998982";s:4:"name";s:24:"Hotline Hỗ trợ nhanh";s:4:"type";s:4:"text";}s:10:"google_map";a:4:{s:3:"key";s:10:"google_map";s:5:"value";s:494:"<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4279.531041465553!2d105.77134244726169!3d21.031845798170586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454ba8c044bab%3A0xa6ba30709b8fb52b!2zMiDEkC4gTMOqIMSQ4bupYyBUaOG7jSwgTeG7uSDEkMOsbmgsIE5hbSBU4burIExpw6ptLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1764148445187!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>";s:4:"name";s:10:"Google map";s:4:"type";s:8:"textarea";}s:14:"google_map_hcm";a:4:{s:3:"key";s:14:"google_map_hcm";s:5:"value";s:503:"<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.083185303144!2d106.60757877583853!3d10.804940758665513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bf20a89f69d%3A0x4074ea6e6f8d358d!2zxJAuIEvDqm5oIDE5LzUvNiBI4bq7bSAzMywgS2h1IFBow7TMgSAzLCBUw6J5IFRo4bqhbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2sus!4v1778907507933!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>";s:4:"name";s:14:"google_map_hcm";s:4:"type";s:8:"textarea";}s:9:"link_mess";a:4:{s:3:"key";s:9:"link_mess";s:5:"value";s:51:"https://web.facebook.com/messages/t/110841757422850";s:4:"name";s:9:"Link mess";s:4:"type";s:4:"text";}s:7:"zalo_hn";a:4:{s:3:"key";s:7:"zalo_hn";s:5:"value";s:26:"https://zalo.me/0982090819";s:4:"name";s:7:"zalo_hn";s:4:"type";s:4:"text";}s:8:"zalo_hn2";a:4:{s:3:"key";s:8:"zalo_hn2";s:5:"value";s:26:"https://zalo.me/0987661782";s:4:"name";s:8:"zalo_hn2";s:4:"type";s:4:"text";}s:8:"zalo_hcm";a:4:{s:3:"key";s:8:"zalo_hcm";s:5:"value";s:26:"https://zalo.me/0983898758";s:4:"name";s:8:"zalo_hcm";s:4:"type";s:4:"text";}s:9:"zalo_hcm2";a:4:{s:3:"key";s:9:"zalo_hcm2";s:5:"value";s:26:"https://zalo.me/0967998982";s:4:"name";s:9:"zalo_hcm2";s:4:"type";s:4:"text";}s:11:"tru_so_dkkd";a:4:{s:3:"key";s:11:"tru_so_dkkd";s:5:"value";s:83:"124 Trịnh Văn Bô, Phường Xuân Phương, Quận Nam Từ Liêm, TP Hà Nội";s:4:"name";s:15:"Trụ sở DKKD";s:4:"type";s:4:"text";}s:10:"ma_so_thue";a:4:{s:3:"key";s:10:"ma_so_thue";s:5:"value";s:10:"0109086333";s:4:"name";s:15:"Mã số thuế";s:4:"type";s:4:"text";}s:16:"post_author_name";a:4:{s:3:"key";s:16:"post_author_name";s:5:"value";s:20:"CEO Trần Văn Lân";s:4:"name";s:42:"Tác giả bài viết (Tên hiển thị)";s:4:"type";s:4:"text";}s:16:"post_author_role";a:4:{s:3:"key";s:16:"post_author_role";s:5:"value";s:49:"Chuyên gia thiết bị vệ sinh công nghiệp";s:4:"name";s:36:"Tác giả bài viết (Chức danh)";s:4:"type";s:4:"text";}s:15:"post_author_bio";a:4:{s:3:"key";s:15:"post_author_bio";s:5:"value";s:159:"Chia sẻ kinh nghiệm chọn mua và bảo dưỡng thiết bị công nghiệp, giúp khách hàng chọn đúng model phù hợp nhu cầu và ngân sách.";s:4:"name";s:39:"Tác giả bài viết (Giới thiệu)";s:4:"type";s:8:"textarea";}}

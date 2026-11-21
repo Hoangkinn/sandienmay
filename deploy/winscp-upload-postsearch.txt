@@ -1,0 +1,19 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/app/Http/Controllers/Backend"
+cd   "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+put  "PostController.php"
+
+lcd "D:/laragon/www/sandienmay/resources/views/backend/post"
+cd   "/public_html/demo.sandienmay.com/resources/views/backend/post"
+put  "index.blade.php"
+
+echo "===== ban tren host sau upload ====="
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+ls "*Controller.php"
+cd "/public_html/demo.sandienmay.com/resources/views/backend/post"
+ls "*.blade.php"
+exit

@@ -1,0 +1,22 @@
+# Vong a11y trang danh muc (30/10) - upload 4 file
+# Chay SAU winscp-backup-a11y.txt. Khong dong .env, khong chay SQL.
+# MSYS2_ARG_CONV_EXCL='*' "/c/Program Files (x86)/WinSCP/WinSCP.com" "/script=D:/laragon/www/sandienmay/deploy/winscp-upload-a11y.txt"
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/resources/views/web/product"
+cd "/public_html/demo.sandienmay.com/resources/views/web/product"
+put "category.blade.php"
+
+lcd "D:/laragon/www/sandienmay/resources/views/web"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+put "header.blade.php"
+
+lcd "D:/laragon/www/sandienmay/public/css-new/dist"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+put "category-v2.min.css"
+put "layout.min.css"
+
+exit

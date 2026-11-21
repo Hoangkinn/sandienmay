@@ -1,0 +1,26 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/app/Helpers"
+cd "/public_html/demo.sandienmay.com/app/Helpers"
+put "UploadImageHelper.php"
+
+lcd "D:/laragon/www/sandienmay/app/Http/Controllers/Backend"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Backend"
+put "PhotoController.php"
+put "BannerController.php"
+put "BrandController.php"
+put "PostController.php"
+put "CategoryController.php"
+
+lcd "D:/laragon/www/sandienmay/config"
+cd "/public_html/demo.sandienmay.com/config"
+put "lfm.php"
+
+lcd "D:/laragon/www/sandienmay/public"
+cd "/public_html/demo.sandienmay.com/public"
+put ".htaccess" ".htaccess"
+
+exit

@@ -1,0 +1,411 @@
+/* Khu tài khoản khách hàng /tai-khoan/* (guard 'customers').
+   Nạp cùng base.css + layout.css; body class: cust-v1. */
+
+/* ---------- Khu tài khoản khách hàng: /tai-khoan/* ---------- */
+.cust-layout {
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+.cust-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.cust-auth {
+    max-width: 460px;
+    margin: 0 auto;
+}
+.cust-h {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1F1B56;
+}
+.cust-sub {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #5B6178;
+}
+.cust-sub a {
+    color: #26348B;
+    font-weight: 600;
+}
+.cust-h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1F1B56;
+}
+
+/* Cột phải của layout 2 cột */
+.cust-main {
+    display: grid;
+    gap: 20px;
+    min-width: 0;
+}
+
+/* Sidebar điều hướng */
+.cust-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.cust-nav-title {
+    padding: 0 12px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1F1B56;
+}
+.cust-nav a {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #26348B;
+    text-decoration: none;
+}
+.cust-nav a:hover {
+    background: #EEF1FB;
+}
+.cust-nav a.is-active {
+    background: #26348B;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Form */
+.cust-field {
+    margin-top: 14px;
+}
+.cust-field label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1F1B56;
+}
+.cust-field input {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #1F1B56;
+    background: #fff;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+}
+.cust-field input:focus {
+    outline: none;
+    border-color: #26348B;
+    box-shadow: 0 0 0 3px rgba(38, 52, 139, .12);
+}
+.cust-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #1F1B56;
+}
+.cust-check input {
+    width: 16px;
+    height: 16px;
+}
+.cust-error {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #D33;
+}
+.cust-alert {
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    background: #E4F7E9;
+    color: #1B7A3D;
+}
+.cust-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+/* Nút: dùng chung cho form auth, form tài khoản và link "Xem chi tiết" */
+.cust-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+    height: 44px;
+    padding: 0 22px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: #D4281E;
+    border: 0;
+    border-radius: 100px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.cust-btn:hover {
+    background: #B31F17;
+    color: #fff;
+}
+.cust-btn.is-ghost {
+    color: #26348B;
+    background: #fff;
+    border: 1px solid #26348B;
+}
+.cust-btn.is-ghost:hover {
+    color: #fff;
+    background: #26348B;
+}
+.cust-logout {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #E6E8F0;
+}
+.cust-logout .cust-btn {
+    width: 100%;
+    min-width: 0;
+    height: 40px;
+}
+.cust-links {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #5B6178;
+}
+.cust-links a {
+    color: #26348B;
+    font-weight: 600;
+}
+
+/* Danh sách + chi tiết đơn hàng */
+.cust-order {
+    margin-top: 14px;
+    border: 1px solid #E6E8F0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cust-order-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #F7F8FC;
+    border-bottom: 1px solid #E6E8F0;
+}
+.cust-order-id {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1F1B56;
+}
+.cust-order-meta {
+    font-size: 13px;
+    color: #5B6178;
+}
+.cust-order-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 16px;
+}
+.cust-order-foot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #F7F8FC;
+    border-top: 1px solid #E6E8F0;
+}
+.cust-order-total {
+    font-size: 16px;
+    font-weight: 700;
+    color: #D4281E;
+}
+.cust-order-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #26348B;
+    text-decoration: none;
+}
+.cust-order-link:hover {
+    text-decoration: underline;
+}
+
+/* Đầu trang chi tiết đơn nằm trong card nên không có nền/margin âm như head trong list */
+.cust-detail-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #E6E8F0;
+}
+.cust-detail-head .cust-h {
+    font-size: 18px;
+}
+.cust-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 14px;
+}
+.cust-item-name {
+    flex: 1 1 auto;
+    min-width: 0;
+    color: #26348B;
+    text-decoration: none;
+}
+.cust-item-name:hover {
+    text-decoration: underline;
+}
+.cust-item-qty {
+    color: #5B6178;
+    white-space: nowrap;
+}
+.cust-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.cust-table th,
+.cust-table td {
+    padding: 10px 8px;
+    text-align: left;
+    border-bottom: 1px solid #EEEFF4;
+}
+.cust-table th {
+    font-weight: 600;
+    color: #5B6178;
+}
+.cust-summary {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #EEEFF4;
+    font-size: 14px;
+}
+.cust-summary-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 4px 0;
+}
+.cust-summary-row.is-total {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1F1B56;
+}
+.cust-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 20px;
+    margin-top: 16px;
+    font-size: 14px;
+}
+.cust-info-grid dt {
+    color: #5B6178;
+    font-size: 13px;
+}
+.cust-info-grid dd {
+    margin: 2px 0 0;
+    color: #1F1B56;
+    font-weight: 500;
+}
+
+/* Nhãn trạng thái đơn — tự tô màu, badge của admin (bg-success...) không tồn tại ở frontend */
+.cust-status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.cust-status.st-pending { background: #FFF4D6; color: #8A6100; }
+.cust-status.st-processing { background: #E7EDFF; color: #26348B; }
+.cust-status.st-on_hold { background: #EEF1F6; color: #4A5568; }
+.cust-status.st-completed { background: #E4F7E9; color: #1B7A3D; }
+.cust-status.st-cancelled { background: #FDE8E8; color: #B42318; }
+.cust-status.st-refunded { background: #F1F1F4; color: #5B5B66; }
+.cust-status.st-failed { background: #FDE8E8; color: #B42318; }
+
+.cust-empty {
+    padding: 30px 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #5B6178;
+}
+.cust-empty a {
+    color: #26348B;
+    font-weight: 600;
+}
+.cust-pager {
+    margin-top: 20px;
+}
+.cust-pager nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.cust-pager a,
+.cust-pager span {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #E6E8F0;
+    border-radius: 8px;
+    color: #26348B;
+    text-decoration: none;
+}
+.cust-pager span {
+    background: #26348B;
+    color: #fff;
+    border-color: #26348B;
+}
+.cust-pager svg {
+    width: 14px;
+    height: 14px;
+}
+
+@media (max-width: 600px) {
+    .cust-table {
+        font-size: 13px;
+    }
+    .cust-table th,
+    .cust-table td {
+        padding: 8px 6px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cust-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+    }
+    .cust-main {
+        gap: 14px;
+    }
+    .cust-card {
+        padding: 16px;
+    }
+    .cust-info-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .cust-btn {
+        width: 100%;
+    }
+}

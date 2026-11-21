@@ -1,0 +1,23 @@
+# Tim ban du lieu cu: home root + sansosanh.vn + thung rac cPanel
+option batch continue
+option confirm off
+open ynlbdgfvhosting@103.75.185.69
+echo "@@@HOME"
+cd "/"
+ls
+echo "@@@SANSOSANH"
+cd "/public_html/sansosanh.vn"
+ls
+echo "@@@SANSOSANH_PUBLIC"
+cd "/public_html/sansosanh.vn/public"
+ls
+echo "@@@PROD_PUBLIC_UPLOADS"
+cd "/public_html/sandienmay.com/public/uploads"
+ls
+echo "@@@PROD_PUBLIC_STORAGE"
+cd "/public_html/sandienmay.com/public/storage"
+ls
+echo "@@@DEMO_PUBLIC"
+cd "/public_html/demo.sandienmay.com/public"
+ls
+exit

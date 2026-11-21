@@ -1,0 +1,11 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/host-check-2026-11-17"
+cd "/public_html/sandienmay.com/resources/views/web/home"
+get "index.blade.php"
+cd "/public_html/sandienmay.com/app/Services/FeServices"
+get "ProductService.php"
+get "CategoryService.php"
+exit

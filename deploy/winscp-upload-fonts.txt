@@ -1,0 +1,29 @@
+# Vong 9 (31/10) — self-host Inter, cat Google Fonts. Chay SAU winscp-backup-fonts.txt.
+# 7 file: 3 woff2 moi + 2 CSS + 2 blade. Khong .env, khong SQL.
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+# Thu muc fonts/inter/ chua ton tai tren host: mkdir o che do batch on de loi "da co" bo qua,
+# sau do quay lai abort moi loi khac.
+option batch on
+mkdir "/public_html/demo.sandienmay.com/public/css-new/fonts/inter"
+option batch abort
+lcd "D:/laragon/www/sandienmay/public/css-new/fonts/inter"
+cd "/public_html/demo.sandienmay.com/public/css-new/fonts/inter"
+put "inter-latin-wght.woff2"
+put "inter-latin-ext-wght.woff2"
+put "inter-vietnamese-wght.woff2"
+lcd "D:/laragon/www/sandienmay/public/css-new/dist"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+put "base.min.css"
+lcd "D:/laragon/www/sandienmay/public/css-new/src"
+cd "/public_html/demo.sandienmay.com/public/css-new/src"
+put "base.css"
+lcd "D:/laragon/www/sandienmay/resources/views/web"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+put "layout.blade.php"
+lcd "D:/laragon/www/sandienmay/resources/views/errors"
+cd "/public_html/demo.sandienmay.com/resources/views/errors"
+put "404.blade.php"
+exit

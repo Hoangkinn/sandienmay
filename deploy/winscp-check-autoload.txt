@@ -1,0 +1,9 @@
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/tmp-host-autoload"
+cd   "/public_html/demo.sandienmay.com/vendor/composer"
+get  "autoload_static.php"
+get  "autoload_classmap.php"
+exit

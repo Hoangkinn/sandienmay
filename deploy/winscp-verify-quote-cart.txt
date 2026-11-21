@@ -1,0 +1,32 @@
+# Vong 13+14 (02/11) — lay nguoc 9 file sau khi upload de doi md5 voi local (chung noi dung day du,
+# khong chi kiem kich thuoc). QuoteRequest.php la file moi, cung lay ve cho du bang chung.
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/verify-quote-cart/requests"
+cd "/public_html/demo.sandienmay.com/app/Http/Requests"
+get "QuoteRequest.php"
+lcd "D:/laragon/www/sandienmay/deploy/verify-quote-cart/controllers"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Frontend"
+get "ContactController.php"
+get "CartController.php"
+lcd "D:/laragon/www/sandienmay/deploy/verify-quote-cart/routes"
+cd "/public_html/demo.sandienmay.com/routes"
+get "frontend.php"
+lcd "D:/laragon/www/sandienmay/deploy/verify-quote-cart/view-product"
+cd "/public_html/demo.sandienmay.com/resources/views/web/product"
+get "_first-screen.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/verify-quote-cart/view-admin-contact"
+cd "/public_html/demo.sandienmay.com/resources/views/backend/customer"
+get "contact.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/verify-quote-cart/view-cart"
+cd "/public_html/demo.sandienmay.com/resources/views/web/cart"
+get "index.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/verify-quote-cart/js"
+cd "/public_html/demo.sandienmay.com/public/js-new/fe/pages"
+get "product.min.js"
+lcd "D:/laragon/www/sandienmay/deploy/verify-quote-cart/css"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+get "product.min.css"
+exit

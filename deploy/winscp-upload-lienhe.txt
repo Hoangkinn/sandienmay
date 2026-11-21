@@ -1,0 +1,22 @@
+# Vong lien he noi (03/11) — upload 5 file len demo
+# Blade + CSS src/dist + JS main. KHONG SQL, KHONG dong .env, KHONG artisan, KHONG key:generate.
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/resources/views/web"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+put "layout.blade.php"
+lcd "D:/laragon/www/sandienmay/public/css-new/src"
+cd "/public_html/demo.sandienmay.com/public/css-new/src"
+put "layout.css"
+lcd "D:/laragon/www/sandienmay/public/css-new/dist"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+put "layout.min.css"
+lcd "D:/laragon/www/sandienmay/public/js-new/fe"
+cd "/public_html/demo.sandienmay.com/public/js-new/fe"
+put "main.js"
+lcd "D:/laragon/www/sandienmay/public/js-new/fe"
+cd "/public_html/demo.sandienmay.com/public/js-new/fe"
+put "main.min.js"
+exit

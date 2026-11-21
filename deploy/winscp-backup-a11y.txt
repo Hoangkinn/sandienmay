@@ -1,0 +1,21 @@
+# Backup truoc khi deploy vong a11y trang danh muc (30/10)
+# Chay: MSYS2_ARG_CONV_EXCL='*' "/c/Program Files (x86)/WinSCP/WinSCP.com" "/script=D:/laragon/www/sandienmay/deploy/winscp-backup-a11y.txt"
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-30b/views-web-product"
+cd "/public_html/demo.sandienmay.com/resources/views/web/product"
+get "category.blade.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-30b/views-web"
+cd "/public_html/demo.sandienmay.com/resources/views/web"
+get "header.blade.php"
+
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-10-30b/css-dist"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+get "category-v2.min.css"
+get "layout.min.css"
+
+exit

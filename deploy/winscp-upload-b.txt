@@ -1,0 +1,22 @@
+# Nhom B PageSpeed (31/10): anh webp + picture + nen press-section
+# Chay SAU winscp-backup-b.txt. Khong dong .env, khong SQL.
+option batch abort
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/public/images"
+cd "/public_html/demo.sandienmay.com/public/images"
+put "flash-sale.webp"
+put "flash-sale-m.webp"
+put "back-bao.webp"
+put "back-bao-m.webp"
+lcd "D:/laragon/www/sandienmay/resources/views/web/home"
+cd "/public_html/demo.sandienmay.com/resources/views/web/home"
+put "index.blade.php"
+lcd "D:/laragon/www/sandienmay/public/css-new/dist"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+put "home-v2.min.css"
+lcd "D:/laragon/www/sandienmay/public/css-new/src"
+cd "/public_html/demo.sandienmay.com/public/css-new/src"
+put "home-v2.css"
+exit

@@ -1,0 +1,19 @@
+# Tim thung rac cPanel + tmp ( biet duoc file da xoa con khong)
+option batch continue
+option confirm off
+open ynlbdgfvhosting@103.75.185.69
+echo "@@@TRASH"
+cd "/.trash"
+ls
+echo "@@@TMP"
+cd "/tmp"
+ls
+echo "@@@PUBLIC_HTML_TMP"
+cd "/public_html/tmp"
+ls
+echo "@@@PUBLIC_HTML_ROOT_FILES"
+cd "/public_html"
+ls "*.zip"
+ls "*.tar.gz"
+ls "*.bak"
+exit

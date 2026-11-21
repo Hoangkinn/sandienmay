@@ -1,0 +1,13 @@
+# Don file zz-* khoi web root demo sau khi xong (05/11)
+option batch abort
+option confirm off
+open ynlbdgfvhosting@103.75.185.69
+rm "/public_html/demo.sandienmay.com/public/zz-image-fix.php"
+rm "/public_html/demo.sandienmay.com/public/zz-upload-check.php"
+echo "----- kiem tra: web root khong con file zz -----"
+cd "/public_html/demo.sandienmay.com/public"
+ls "zz-*"
+echo "----- thu muc rac + map van giu -----"
+cd "/public_html/demo.sandienmay.com/storage/app"
+ls "zz-image-*"
+exit

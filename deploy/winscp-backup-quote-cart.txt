@@ -1,0 +1,29 @@
+# Vong 13+14 (02/11) — popup bao gia + nut "Mua them san pham khac": backup 8 file bi ghi de
+# (QuoteRequest.php la file MOI -> khong co gi de backup).
+option batch on
+option confirm off
+option transfer binary
+open ynlbdgfvhosting@103.75.185.69
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-02/quote-cart/controllers"
+cd "/public_html/demo.sandienmay.com/app/Http/Controllers/Frontend"
+get "ContactController.php"
+get "CartController.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-02/quote-cart/routes"
+cd "/public_html/demo.sandienmay.com/routes"
+get "frontend.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-02/quote-cart/view-product"
+cd "/public_html/demo.sandienmay.com/resources/views/web/product"
+get "_first-screen.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-02/quote-cart/view-admin-contact"
+cd "/public_html/demo.sandienmay.com/resources/views/backend/customer"
+get "contact.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-02/quote-cart/view-cart"
+cd "/public_html/demo.sandienmay.com/resources/views/web/cart"
+get "index.blade.php"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-02/quote-cart/js"
+cd "/public_html/demo.sandienmay.com/public/js-new/fe/pages"
+get "product.min.js"
+lcd "D:/laragon/www/sandienmay/deploy/backup-host-2026-11-02/quote-cart/css"
+cd "/public_html/demo.sandienmay.com/public/css-new/dist"
+get "product.min.css"
+exit
